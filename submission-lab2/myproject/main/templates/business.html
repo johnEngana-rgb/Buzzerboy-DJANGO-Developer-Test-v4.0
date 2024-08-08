@@ -7,36 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Appku - Software Landing Page">
-
+    {% load static %}
     <!-- ========== Page Title ========== -->
     <title>Appku - Software Landing Page</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/css/themify-icons.css" rel="stylesheet" />
-    <link href="assets/css/elegant-icons.css" rel="stylesheet" />
-    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
-    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="assets/css/animate.css" rel="stylesheet" />
-    <link href="assets/css/validnavs.css" rel="stylesheet" />
-    <link href="assets/css/helper.css" rel="stylesheet" />
-    <link href="assets/css/shop.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/themify-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/elegant-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/flaticon-set.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.carousel.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/validnavs.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/helper.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/shop.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="assets/js/html5/html5shiv.min.js"></script>
-      <script src="assets/js/html5/respond.min.js"></script>
+      <script src="{% static 'assets/js/html5/html5shiv.min.js' %}"></script>
+      <script src="{% static 'assets/js/html5/respond.min.js' %}"></script>
     <![endif]-->
 
 </head>
@@ -62,7 +62,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="logo" alt="Logo">
+                        <img src="{% static 'assets/img/logo.png' %}" class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -70,7 +70,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
 
-                    <img src="assets/img/logo.png" alt="Logo">
+                    <img src="{% static 'assets/img/logo.png' %}" alt="Logo">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-times"></i>
                     </button>
@@ -213,8 +213,8 @@
                     </div>
 
                      <div class="col-lg-6 offset-lg-1 business-banner-thumb">
-                        <img class="wow fadeInUp" src="assets/img/illustration/28.png" alt="Thumb">
-                        <img class="wow fadeInRight" data-wow-delay="900ms" src="assets/img/illustration/graph-1.png" alt="Thumb">
+                        <img class="wow fadeInUp" src="{% static 'assets/img/illustration/28.png' %}" alt="Thumb">
+                        <img class="wow fadeInRight" data-wow-delay="900ms" src="{% static 'assets/img/illustration/graph-1.png' %}" alt="Thumb">
                         <div class="revenew wow fadeInDown" data-wow-delay="500ms">
                             <i class="fas fa-arrow-right"></i>
                             <h4>+32.88%</h4>
@@ -242,7 +242,7 @@
                             <div class="col-lg-6 col-md-6">
                                 <div class="feature-style-two">
                                     <div class="icon">
-                                        <img src="assets/img/icon/5.png" alt="Icon">
+                                        <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
                                     </div>
                                     <div class="info">
                                         <h4>Growing Business</h4>
@@ -257,7 +257,7 @@
                             <div class="col-lg-6 col-md-6">
                                 <div class="feature-style-two">
                                     <div class="icon">
-                                        <img src="assets/img/icon/6.png" alt="Icon">
+                                        <img src="{% static 'assets/img/icon/6.png' %}" alt="Icon">
                                     </div>
                                     <div class="info">
                                         <h4>Finance Investment</h4>
@@ -297,13 +297,13 @@
                             </p>
                             <div class="author-info">
                                 <div class="thumb">
-                                    <img src="assets/img/100x100.png" alt="Image Not Found">
+                                    <img src="{% static 'assets/img/100x100.png' %}" alt="Image Not Found">
                                 </div>
                                 <div class="info">
                                     <h4>Ahem Natasha</h4>
                                     <span>CEO & Founder</span>
                                 </div>
-                                <img src="assets/img/signature.png" alt="Image not Found">
+                                <img src="{% static 'assets/img/signature.png' %}" alt="Image not Found">
                             </div>
                         </div>
                     </div>
@@ -333,7 +333,7 @@
                         <!-- Single item -->
                         <div class="service-seven-item">
                             <div class="top">
-                                <img src="assets/img/icon/money.png" alt="Image Not Found">
+                                <img src="{% static 'assets/img/icon/money.png' %}" alt="Image Not Found">
                                 <h4><a href="#">Investment idea</a></h4>
                             </div>
                             <ul>
@@ -350,7 +350,7 @@
                         <!-- Single item -->
                         <div class="service-seven-item">
                             <div class="top">
-                                <img src="assets/img/icon/wallet.png" alt="Image Not Found">
+                                <img src="{% static 'assets/img/icon/wallet.png' %}" alt="Image Not Found">
                                 <h4><a href="#">Business Strategy</a></h4>
                             </div>
                             <ul>
@@ -367,7 +367,7 @@
                         <!-- Single item -->
                         <div class="service-seven-item">
                             <div class="top">
-                                <img src="assets/img/icon/transaction.png" alt="Image Not Found">
+                                <img src="{% static 'assets/img/icon/transaction.png' %}" alt="Image Not Found">
                                 <h4><a href="#">Consultancy Advice</a></h4>
                             </div>
                             <ul>
@@ -384,7 +384,7 @@
                         <!-- Single item -->
                         <div class="service-seven-item">
                             <div class="top">
-                                <img src="assets/img/icon/payment-method.png" alt="Image Not Found">
+                                <img src="{% static 'assets/img/icon/payment-method.png' %}" alt="Image Not Found">
                                 <h4><a href="#">Markets Researc</a></h4>
                             </div>
                             <ul>
@@ -417,19 +417,19 @@
                 <div class="col-lg-10 offset-lg-1">
                     <div class="brand-three-items">
                         <div class="item">
-                            <img src="assets/img/clients/c1.png" alt="Image not Found">
+                            <img src="{% static 'assets/img/clients/c1.png' %}" alt="Image not Found">
                         </div>
                         <div class="item">
-                            <img src="assets/img/clients/c2.png" alt="Image not Found">
+                            <img src="{% static 'assets/img/clients/c2.png' %}" alt="Image not Found">
                         </div>
                         <div class="item">
-                            <img src="assets/img/clients/c7.png" alt="Image not Found">
+                            <img src="{% static 'assets/img/clients/c7.png' %}" alt="Image not Found">
                         </div>
                         <div class="item">
-                            <img src="assets/img/clients/c4.png" alt="Image not Found">
+                            <img src="{% static 'assets/img/clients/c4.png' %}" alt="Image not Found">
                         </div>
                         <div class="item">
-                            <img src="assets/img/clients/c5.png" alt="Image not Found">
+                            <img src="{% static 'assets/img/clients/c5.png' %}" alt="Image not Found">
                         </div>
                     </div>
                 </div>
@@ -461,7 +461,7 @@
                             <!-- Single Item -->
                             <div class="pf-item">
                                 <div class="overlay">
-                                    <img src="assets/img/800x600.png" alt="thumb">
+                                    <img src="{% static 'assets/img/800x600.png' %}" alt="thumb">
                                     <div class="content">
                                         <div class="title">
                                             <span>Components</span>
@@ -476,7 +476,7 @@
                             <!-- Single Item -->
                             <div class="pf-item">
                                 <div class="overlay">
-                                    <img src="assets/img/800x1550.svg" alt="thumb">
+                                    <img src="{% static 'assets/img/800x1550.svg' %}" alt="thumb">
                                     <div class="content">
                                         <div class="title">
                                             <span>Business</span>
@@ -490,7 +490,7 @@
                             <!-- Single Item -->
                             <div class="pf-item">
                                 <div class="overlay">
-                                    <img src="assets/img/800x900.png" alt="thumb">
+                                    <img src="{% static 'assets/img/800x900.png' %}" alt="thumb">
                                     <div class="content">
                                         <div class="title">
                                             <span>Invest</span>
@@ -504,7 +504,7 @@
                             <!-- Single Item -->
                             <div class="pf-item">
                                 <div class="overlay">
-                                    <img src="assets/img/800x1550.svg" alt="thumb">
+                                    <img src="{% static 'assets/img/800x1550.svg' %}" alt="thumb">
                                     <div class="content">
                                         <div class="title">
                                             <span>Creative</span>
@@ -518,7 +518,7 @@
                             <!-- Single Item -->
                             <div class="pf-item">
                                 <div class="overlay">
-                                    <img src="assets/img/800x900.png" alt="thumb">
+                                    <img src="{% static 'assets/img/800x900.png' %}" alt="thumb">
                                     <div class="content">
                                         <div class="title">
                                             <span>Finance</span>
@@ -532,7 +532,7 @@
                             <!-- Single Item -->
                             <div class="pf-item">
                                 <div class="overlay">
-                                    <img src="assets/img/800x600.png" alt="thumb">
+                                    <img src="{% static 'assets/img/800x600.png' %}" alt="thumb">
                                     <div class="content">
                                         <div class="title">
                                             <span>Source</span>
@@ -577,7 +577,7 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle" class="share-toggle" hidden>
                                     <label for="toggle" class="share-button">
@@ -605,7 +605,7 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle2" class="share-toggle" hidden>
                                     <label for="toggle2" class="share-button">
@@ -633,7 +633,7 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle3" class="share-toggle" hidden>
                                     <label for="toggle3" class="share-button">
@@ -685,7 +685,7 @@
                         <!-- Single Item -->
                         <div class="item">
                             <div class="provider">
-                                <img src="assets/img/800x800.png" alt="Author">
+                                <img src="{% static 'assets/img/800x800.png' %}" alt="Author">
                             </div>
                             <div class="info">
                                 <svg xmlns="http://www.w3.org/2000/svg">
@@ -705,7 +705,7 @@
                                     Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future. 
                                 </p>
                                 <div class="content">
-                                    <img src="assets/img/shape/quote-big.png" alt="Image not Found">
+                                    <img src="{% static 'assets/img/shape/quote-big.png' %}" alt="Image not Found">
                                     <div class="right">
                                         <h4>Devid Warner</h4>
                                         <span> Managing Director</span>
@@ -717,7 +717,7 @@
                         <!-- Single Item -->
                         <div class="item">
                             <div class="provider">
-                                <img src="assets/img/800x800.png" alt="Author">
+                                <img src="{% static 'assets/img/800x800.png' %}" alt="Author">
                             </div>
                             <div class="info">
                                 <svg xmlns="http://www.w3.org/2000/svg">
@@ -737,7 +737,7 @@
                                     Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future.  
                                 </p>
                                 <div class="content">
-                                    <img src="assets/img/shape/quote-big.png" alt="Image not Found">
+                                    <img src="{% static 'assets/img/shape/quote-big.png' %}" alt="Image not Found">
                                     <div class="right">
                                         <h4>Pruasuj Natasha</h4>
                                         <span> Theme Developer</span>
@@ -749,7 +749,7 @@
                         <!-- Single Item -->
                         <div class="item">
                             <div class="provider">
-                                <img src="assets/img/800x800.png" alt="Author">
+                                <img src="{% static 'assets/img/800x800.png' %}" alt="Author">
                             </div>
                             <div class="info">
                                 <svg xmlns="http://www.w3.org/2000/svg">
@@ -769,7 +769,7 @@
                                     Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future.  
                                 </p>
                                 <div class="content">
-                                    <img src="assets/img/shape/quote-big.png" alt="Image not Found">
+                                    <img src="{% static 'assets/img/shape/quote-big.png' %}" alt="Image not Found">
                                     <div class="right">
                                         <h4>Koyel Anderson</h4>
                                         <span> Project Manager</span>
@@ -806,7 +806,7 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
                             <div class="date"><strong>18</strong> <span>Apr</span></div>
                         </div>
                         <div class="info">
@@ -835,7 +835,7 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
                             <div class="date"><strong>25</strong> <span>Aug</span></div>
                         </div>
                         <div class="info">
@@ -864,7 +864,7 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
                             <div class="date"><strong>05</strong> <span>Jul</span></div>
                         </div>
                         <div class="info">
@@ -910,7 +910,7 @@
                     </div>
                 </div>
                 <div class="illustration">
-                    <img src="assets/img/illustration/1.png" alt="illustration">
+                    <img src="{% static 'assets/img/illustration/1.png' %}" alt="illustration">
                 </div>
            </div>
         </div>
@@ -926,7 +926,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
+                            <img src="{% static 'assets/img/logo-light.png' %}" alt="Logo">
                             <p>
                                 Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing.
                             </p>
@@ -1054,22 +1054,22 @@
     
     <!-- jQuery Frameworks
     ============================================= -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/modernizr.custom.13711.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/progress-bar.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/count-to.js"></script>
-    <script src="assets/js/YTPlayer.min.js"></script>
-    <script src="assets/js/validnavs.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/modernizr.custom.13711.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/count-to.js' %}"></script>
+    <script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+    <script src="{% static 'assets/js/validnavs.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 </html>

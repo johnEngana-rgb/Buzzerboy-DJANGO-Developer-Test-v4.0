@@ -7,35 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Appku - Software Landing Page">
-
+    {% load static %}
     <!-- ========== Page Title ========== -->
     <title>Appku - Software Landing Page</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/css/themify-icons.css" rel="stylesheet" />
-    <link href="assets/css/elegant-icons.css" rel="stylesheet" />
-    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
-    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="assets/css/animate.css" rel="stylesheet" />
-    <link href="assets/css/validnavs.css" rel="stylesheet" />
-    <link href="assets/css/helper.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/themify-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/elegant-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/flaticon-set.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.carousel.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/validnavs.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/helper.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="assets/js/html5/html5shiv.min.js"></script>
-      <script src="assets/js/html5/respond.min.js"></script>
+      <script src="{% static 'assets/js/html5/html5shiv.min.js' %}"></script>
+      <script src="{% static 'assets/js/html5/respond.min.js' %}"></script>
     <![endif]-->
 
 </head>
@@ -61,7 +61,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="logo" alt="Logo">
+                        <img src="{% static 'assets/img/logo.png' %}" class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -69,7 +69,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
 
-                    <img src="assets/img/logo.png" alt="Logo">
+                    <img src="{% static 'assets/img/logo.png' %}" alt="Logo">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-times"></i>
                     </button>
@@ -155,7 +155,7 @@
                     </div>
 
                      <div class="col-lg-6 thumb wow fadeInRight" data-wow-delay="900ms">
-                        <img src="assets/img/illustration/15.png" alt="Thumb">
+                        <img src="{% static 'assets/img/illustration/15.png' %}" alt="Thumb">
                     </div>
                     
                 </div>
@@ -186,7 +186,7 @@
                 <div class="features-style-four col-lg-4 col-md-6">
                     <div class="feature-style-four-item">
                         <div class="icon">
-                            <img src="assets/img/icon/app/1.png" alt="Icon">
+                            <img src="{% static 'assets/img/icon/app/1.png' %}" alt="Icon">
                         </div>
                         <div class="info">
                             <h4>Fully Secured</h4>
@@ -201,7 +201,7 @@
                 <div class="features-style-four col-lg-4 col-md-6">
                     <div class="feature-style-four-item">
                         <div class="icon">
-                            <img src="assets/img/icon/app/2.png" alt="Icon">
+                            <img src="{% static 'assets/img/icon/app/2.png' %}" alt="Icon">
                         </div>
                         <div class="info">
                             <h4>Easy to Edit</h4>
@@ -216,7 +216,7 @@
                 <div class="features-style-four col-lg-4 col-md-6">
                     <div class="feature-style-four-item">
                         <div class="icon">
-                            <img src="assets/img/icon/app/3.png" alt="Icon">
+                            <img src="{% static 'assets/img/icon/app/3.png' %}" alt="Icon">
                         </div>
                         <div class="info">
                             <h4>Design & Branding</h4>
@@ -299,7 +299,7 @@
                 <div class="col-lg-6 text-center app-feature-style-one">
                     <div class="app-feature-item">
                         <div class="app-feature-thumb">
-                            <img src="assets/img/illustration/17.png" alt="Thumb">
+                            <img src="{% static 'assets/img/illustration/17.png' %}" alt="Thumb">
                         </div>
                     </div>
                 </div>
@@ -351,8 +351,8 @@
                         <!-- Single item -->
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/screenshot/1.png" alt="Thumb">
-                                <a href="assets/img/screenshot/1.png" class="item popup-gallery theme video-play-button">
+                                <img src="{% static 'assets/img/screenshot/1.png' %}" alt="Thumb">
+                                <a href="{% static 'assets/img/screenshot/1.png' %}" class="item popup-gallery theme video-play-button">
                                     <i class="fa fa-plus"></i>
                                 </a>
                             </div>
@@ -361,8 +361,8 @@
                         <!-- Single item -->
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/screenshot/2.png" alt="Thumb">
-                                <a href="assets/img/screenshot/2.png" class="item popup-gallery theme video-play-button">
+                                <img src="{% static 'assets/img/screenshot/2.png' %}" alt="Thumb">
+                                <a href="{% static 'assets/img/screenshot/2.png' %}" class="item popup-gallery theme video-play-button">
                                     <i class="fa fa-plus"></i>
                                 </a>
                             </div>
@@ -371,8 +371,8 @@
                         <!-- Single item -->
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/screenshot/3.png" alt="Thumb">
-                                <a href="assets/img/screenshot/3.png" class="item popup-gallery theme video-play-button">
+                                <img src="{% static 'assets/img/screenshot/3.png' %}" alt="Thumb">
+                                <a href="{% static 'assets/img/screenshot/3.png' %}" class="item popup-gallery theme video-play-button">
                                     <i class="fa fa-plus"></i>
                                 </a>
                             </div>
@@ -381,8 +381,8 @@
                         <!-- Single item -->
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/screenshot/4.png" alt="Thumb">
-                                <a href="assets/img/screenshot/4.png" class="item popup-gallery theme video-play-button">
+                                <img src="{% static 'assets/img/screenshot/4.png' %}" alt="Thumb">
+                                <a href="{% static 'assets/img/screenshot/4.png' %}" class="item popup-gallery theme video-play-button">
                                     <i class="fa fa-plus"></i>
                                 </a>
                             </div>
@@ -418,7 +418,7 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle" class="share-toggle" hidden>
                                     <label for="toggle" class="share-button">
@@ -446,7 +446,7 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle2" class="share-toggle" hidden>
                                     <label for="toggle2" class="share-button">
@@ -474,7 +474,7 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle3" class="share-toggle" hidden>
                                     <label for="toggle3" class="share-button">
@@ -528,7 +528,7 @@
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
-                                    <img src="assets/img/100x100.png" alt="Author">
+                                    <img src="{% static 'assets/img/100x100.png' %}" alt="Author">
                                     <div class="content">
                                         <h4>Devid Warner</h4>
                                         <span> Managing Director</span>
@@ -554,7 +554,7 @@
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
-                                    <img src="assets/img/100x100.png" alt="Author">
+                                    <img src="{% static 'assets/img/100x100.png' %}" alt="Author">
                                     <div class="content">
                                         <h4>Pruasuj Natasha</h4>
                                         <span> Theme Developer</span>
@@ -580,7 +580,7 @@
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
-                                    <img src="assets/img/100x100.png" alt="Author">
+                                    <img src="{% static 'assets/img/100x100.png' %}" alt="Author">
                                     <div class="content">
                                         <h4>Koyel Anderson</h4>
                                         <span> Project Manager</span>
@@ -721,7 +721,7 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
                             <div class="date"><strong>18</strong> <span>Apr</span></div>
                         </div>
                         <div class="info">
@@ -750,7 +750,7 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
                             <div class="date"><strong>25</strong> <span>Aug</span></div>
                         </div>
                         <div class="info">
@@ -779,7 +779,7 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
                             <div class="date"><strong>05</strong> <span>Jul</span></div>
                         </div>
                         <div class="info">
@@ -826,7 +826,7 @@
                 </div>
             </div>
             <div class="illustration">
-                <img src="assets/img/illustration/1.png" alt="illustration">
+                <img src="{% static 'assets/img/illustration/1.png' %}" alt="illustration">
             </div>
         </div>
     </div>
@@ -840,7 +840,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
+                            <img src="{% static 'assets/img/logo-light.png' %}" alt="Logo">
                             <p>
                                 Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing.
                             </p>
@@ -968,22 +968,22 @@
     
     <!-- jQuery Frameworks
     ============================================= -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/modernizr.custom.13711.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/progress-bar.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/count-to.js"></script>
-    <script src="assets/js/YTPlayer.min.js"></script>
-    <script src="assets/js/validnavs.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/modernizr.custom.13711.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/count-to.js' %}"></script>
+    <script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+    <script src="{% static 'assets/js/validnavs.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 </html>

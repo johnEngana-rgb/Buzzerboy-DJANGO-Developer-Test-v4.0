@@ -5,9 +5,11 @@ def convert_to_static_tag(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
 
-    # Convert src and href attributes
+    # Convert src attributes
     content = re.sub(r'src="([^"]+)"', r'src="{% static \'\1\' %}"', content)
-    content = re.sub(r'href="([^"]+)"', r'href="{% static \'\1\' %}"', content)
+    # Convert href attributes only if they contain 'assets'
+    content = re.sub(r'href="(assets/[^"]+)"', r'href="{% static \'\1\' %}"', content)
+    # Convert url attributes only if they contain 'assets'
     content = re.sub(r'url\("([^"]+)"\)', r'url("{% static \'\1\' %}")', content)
     
     # Ensure no nested {% static %} tags
