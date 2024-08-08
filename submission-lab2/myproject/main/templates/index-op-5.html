@@ -7,35 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Appku - Software Landing Page">
-
+    {% load static %}
     <!-- ========== Page Title ========== -->
     <title>Appku - Software Landing Page</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets/css/themify-icons.css" rel="stylesheet" />
-    <link href="assets/css/elegant-icons.css" rel="stylesheet" />
-    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
-    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="assets/css/animate.css" rel="stylesheet" />
-    <link href="assets/css/validnavs.css" rel="stylesheet" />
-    <link href="assets/css/helper.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/themify-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/elegant-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/flaticon-set.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.carousel.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/validnavs.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/helper.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="assets/js/html5/html5shiv.min.js"></script>
-      <script src="assets/js/html5/respond.min.js"></script>
+      <script src="{% static 'assets/js/html5/html5shiv.min.js' %}"></script>
+      <script src="{% static 'assets/js/html5/respond.min.js' %}"></script>
     <![endif]-->
 
 </head>
@@ -60,9 +60,9 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo-light.png" class="logo logo-display" alt="Logo">
-                        <img src="assets/img/logo.png" class="logo logo-scrolled" alt="Logo">
+                    <a class="navbar-brand" href="{% static 'index.html' %}">
+                        <img src="{% static 'assets/img/logo-light.png' %}" class="logo logo-display" alt="Logo">
+                        <img src="{% static 'assets/img/logo.png' %}" class="logo logo-scrolled" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -70,50 +70,50 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
 
-                    <img src="assets/img/logo.png" alt="Logo">
+                    <img src="{% static 'assets/img/logo.png' %}" alt="Logo">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-times"></i>
                     </button>
                     
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
+                            <a href="{% static '#' %}" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
                             <ul class="dropdown-menu">
-                                <li><a href="index.html">App Landing</a></li>
-                                <li><a href="index-2.html">Software Landing</a></li>
-                                <li><a href="creative-agency.html">Creative Agency <span class="badge">New</span></a></li>
-                                <li><a href="it-solutions.html">It Solutions <span class="badge">New</span></a></li>
-                                <li><a href="business.html">Business <span class="badge">New</span></a></li>
-                                <li><a href="index-5.html">Startup Landing</a></li>
-                                <li><a href="index-3.html">Saas Landing</a></li>
-                                <li><a href="index-4.html">Data Science</a></li>
+                                <li><a href="{% static 'index.html' %}">App Landing</a></li>
+                                <li><a href="{% static 'index-2.html' %}">Software Landing</a></li>
+                                <li><a href="{% static 'creative-agency.html' %}">Creative Agency <span class="badge">New</span></a></li>
+                                <li><a href="{% static 'it-solutions.html' %}">It Solutions <span class="badge">New</span></a></li>
+                                <li><a href="{% static 'business.html' %}">Business <span class="badge">New</span></a></li>
+                                <li><a href="{% static 'index-5.html' %}">Startup Landing</a></li>
+                                <li><a href="{% static 'index-3.html' %}">Saas Landing</a></li>
+                                <li><a href="{% static 'index-4.html' %}">Data Science</a></li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Onepage</a>
+                                    <a href="{% static '#' %}" class="dropdown-toggle" data-toggle="dropdown" >Onepage</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="index-op.html">App Landing</a></li>
-                                        <li><a href="index-op-2.html">Software Landing</a></li>
-                                        <li><a href="index-op-5.html">Startup Landing</a></li>
-                                        <li><a href="index-op-3.html">Saas Landing</a></li>
-                                        <li><a href="index-op-4.html">Data Science</a></li>
+                                        <li><a href="{% static 'index-op.html' %}">App Landing</a></li>
+                                        <li><a href="{% static 'index-op-2.html' %}">Software Landing</a></li>
+                                        <li><a href="{% static 'index-op-5.html' %}">Startup Landing</a></li>
+                                        <li><a href="{% static 'index-op-3.html' %}">Saas Landing</a></li>
+                                        <li><a href="{% static 'index-op-4.html' %}">Data Science</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         
                         <li>
-                            <a class="smooth-menu" href="#features">Features</a>
+                            <a class="smooth-menu" href="{% static '#features' %}">Features</a>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#about">About</a>
+                            <a class="smooth-menu" href="{% static '#about' %}">About</a>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#process">Process</a>
+                            <a class="smooth-menu" href="{% static '#process' %}">Process</a>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#team">Team</a>
+                            <a class="smooth-menu" href="{% static '#team' %}">Team</a>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#pricing">Pricing</a>
+                            <a class="smooth-menu" href="{% static '#pricing' %}">Pricing</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -122,7 +122,7 @@
                     <!-- Start Atribute Navigation -->
                     <div class="attr-nav">
                         <ul>
-                            <li class="button"><a href="contact.html">Login</a></li>
+                            <li class="button"><a href="{% static 'contact.html' %}">Login</a></li>
                         </ul>
                     </div>
                     <!-- End Atribute Navigation -->
@@ -148,10 +148,10 @@
                     <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                 </defs>
                 <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    <use xlink:href="{% static '#gentle-wave' %}" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="{% static '#gentle-wave' %}" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="{% static '#gentle-wave' %}" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="{% static '#gentle-wave' %}" x="48" y="7" fill="#fff" />
                 </g>
             </svg>
             
@@ -167,12 +167,12 @@
                             Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient to unpleasant in insensible favourable.
                         </p>
                         <div class="button">
-                            <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="relative popup-youtube video-btn"><i class="fas fa-play"></i>Work Process</a>
+                            <a href="{% static 'https://www.youtube.com/watch?v=owhuBrGIOsE' %}" class="relative popup-youtube video-btn"><i class="fas fa-play"></i>Work Process</a>
                         </div>
                     </div>
 
                      <div class="col-lg-6 thumb wow fadeInRight" data-wow-delay="900ms">
-                        <img src="assets/img/illustration/19.png" alt="Thumb">
+                        <img src="{% static 'assets/img/illustration/19.png' %}" alt="Thumb">
                     </div>
                     
                 </div>
@@ -211,7 +211,7 @@
                 </div>
                 <div class="feature-style-five col-lg-7 pl-50 pl-md-15 pl-xs-15">
                     <div class="infinite-updown-illustration">
-                        <img src="assets/img/shape/37.png" alt="illustration">
+                        <img src="{% static 'assets/img/shape/37.png' %}" alt="illustration">
                     </div>
                     <div class="row">
 
@@ -267,7 +267,7 @@
             <div class="row align-center">
                 <div class="collaboration-style-one col-lg-6">
                     <div class="thumb">
-                        <img src="assets/img/illustration/23.png" alt="Image not found">
+                        <img src="{% static 'assets/img/illustration/23.png' %}" alt="Image not found">
                     </div>
                 </div>
                 <div class="collaboration-style-one col-lg-6 pl-80 pl-md-15 pl-xs-15">
@@ -314,11 +314,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="partner-border-carousel owl-carousel owl-theme">
-                            <img src="assets/img/logo/1.png" alt="Partner">
-                            <img src="assets/img/logo/2.png" alt="Partner">
-                            <img src="assets/img/logo/3.png" alt="Partner">
-                            <img src="assets/img/logo/4.png" alt="Partner">
-                            <img src="assets/img/logo/5.png" alt="Partner">
+                            <img src="{% static 'assets/img/logo/1.png' %}" alt="Partner">
+                            <img src="{% static 'assets/img/logo/2.png' %}" alt="Partner">
+                            <img src="{% static 'assets/img/logo/3.png' %}" alt="Partner">
+                            <img src="{% static 'assets/img/logo/4.png' %}" alt="Partner">
+                            <img src="{% static 'assets/img/logo/5.png' %}" alt="Partner">
                         </div>
                     </div>
                 </div>
@@ -367,7 +367,7 @@
                             <div class="row align-center">
                                 <div class="col-lg-6 pr-80 pr-md-15 pr-xs-15">
                                     <div class="thumb">
-                                        <img src="assets/img/illustration/26.png" alt="illustration">
+                                        <img src="{% static 'assets/img/illustration/26.png' %}" alt="illustration">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -401,7 +401,7 @@
                             <div class="row align-center">
                                 <div class="col-lg-6 pr-80 pr-md-15 pr-xs-15">
                                     <div class="thumb">
-                                        <img src="assets/img/illustration/27.png" alt="illustration">
+                                        <img src="{% static 'assets/img/illustration/27.png' %}" alt="illustration">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -435,7 +435,7 @@
                             <div class="row align-center">
                                 <div class="col-lg-6 pr-80 pr-md-15 pr-xs-15">
                                     <div class="thumb">
-                                        <img src="assets/img/illustration/25.png" alt="illustration">
+                                        <img src="{% static 'assets/img/illustration/25.png' %}" alt="illustration">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -496,25 +496,25 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle" class="share-toggle" hidden>
                                     <label for="toggle" class="share-button">
                                         <i class="fas fa-plus"></i>
                                     </label>
-                                    <a href="#" class="share-icon facebook">
+                                    <a href="{% static '#' %}" class="share-icon facebook">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
-                                    <a href="#" class="share-icon twitter">
+                                    <a href="{% static '#' %}" class="share-icon twitter">
                                         <i class="fab fa-twitter"></i>
                                     </a>
-                                    <a href="#" class="share-icon instagram">
+                                    <a href="{% static '#' %}" class="share-icon instagram">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="info">
-                                <h4><a href="team-details.html">Ahem Natasha</a></h4>
+                                <h4><a href="{% static 'team-details.html' %}">Ahem Natasha</a></h4>
                                 <span>Operations officer</span>
                             </div>
                         </div>
@@ -524,25 +524,25 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle2" class="share-toggle" hidden>
                                     <label for="toggle2" class="share-button">
                                         <i class="fas fa-plus"></i>
                                     </label>
-                                    <a href="#" class="share-icon facebook">
+                                    <a href="{% static '#' %}" class="share-icon facebook">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
-                                    <a href="#" class="share-icon twitter">
+                                    <a href="{% static '#' %}" class="share-icon twitter">
                                         <i class="fab fa-twitter"></i>
                                     </a>
-                                    <a href="#" class="share-icon instagram">
+                                    <a href="{% static '#' %}" class="share-icon instagram">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="info">
-                                <h4><a href="team-details.html">Devid mark</a></h4>
+                                <h4><a href="{% static 'team-details.html' %}">Devid mark</a></h4>
                                 <span>Graphic designer</span>
                             </div>
                         </div>
@@ -552,25 +552,25 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
                                 <div class="social">
                                     <input type="checkbox" id="toggle3" class="share-toggle" hidden>
                                     <label for="toggle3" class="share-button">
                                         <i class="fas fa-plus"></i>
                                     </label>
-                                    <a href="#" class="share-icon facebook">
+                                    <a href="{% static '#' %}" class="share-icon facebook">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
-                                    <a href="#" class="share-icon twitter">
+                                    <a href="{% static '#' %}" class="share-icon twitter">
                                         <i class="fab fa-twitter"></i>
                                     </a>
-                                    <a href="#" class="share-icon instagram">
+                                    <a href="{% static '#' %}" class="share-icon instagram">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="info">
-                                <h4><a href="team-details.html">Brave Hammam</a></h4>
+                                <h4><a href="{% static 'team-details.html' %}">Brave Hammam</a></h4>
                                 <span>Web developer</span>
                             </div>
                         </div>
@@ -606,7 +606,7 @@
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
-                                    <img src="assets/img/100x100.png" alt="Author">
+                                    <img src="{% static 'assets/img/100x100.png' %}" alt="Author">
                                     <div class="content">
                                         <h4>Devid Warner</h4>
                                         <span> Managing Director</span>
@@ -632,7 +632,7 @@
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
-                                    <img src="assets/img/100x100.png" alt="Author">
+                                    <img src="{% static 'assets/img/100x100.png' %}" alt="Author">
                                     <div class="content">
                                         <h4>Pruasuj Natasha</h4>
                                         <span> Theme Developer</span>
@@ -658,7 +658,7 @@
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
-                                    <img src="assets/img/100x100.png" alt="Author">
+                                    <img src="{% static 'assets/img/100x100.png' %}" alt="Author">
                                     <div class="content">
                                         <h4>Koyel Anderson</h4>
                                         <span> Project Manager</span>
@@ -723,7 +723,7 @@
                                 <li><i class="fas fa-check"></i> 10 GB Dedicated Hosting free</li>
                                 <li><i class="fas fa-times"></i> Live Support</li>
                             </ul>
-                            <a class="btn circle btn-gray btn-sm" href="#">Purchase Plan</a>
+                            <a class="btn circle btn-gray btn-sm" href="{% static '#' %}">Purchase Plan</a>
                         </div>
                     </div>
                     <!-- End Single Itme -->
@@ -744,7 +744,7 @@
                                 <li><i class="fas fa-check"></i> Lifetime free Support</li>
                                 <li><i class="fas fa-times"></i> Live Support</li>
                             </ul>
-                            <a class="btn circle btn-theme-effect btn-sm" href="#">Purchase Plan</a>
+                            <a class="btn circle btn-theme-effect btn-sm" href="{% static '#' %}">Purchase Plan</a>
                         </div>
                     </div>
                     <!-- End Single Itme -->
@@ -766,7 +766,7 @@
                                 <li><i class="fas fa-check"></i> SEO Optimized</li>
                                 <li><i class="fas fa-check"></i> Live Support</li>
                             </ul>
-                            <a class="btn circle btn-gray btn-sm" href="#">Purchase Plan</a>
+                            <a class="btn circle btn-gray btn-sm" href="{% static '#' %}">Purchase Plan</a>
                         </div>
                     </div>
                     <!-- End Single Itme -->
@@ -799,22 +799,22 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
+                            <a href="{% static 'blog-single-with-sidebar.html' %}"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
                             <div class="date"><strong>18</strong> <span>Apr</span></div>
                         </div>
                         <div class="info">
                             <div class="meta">
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="fas fa-user-circle"></i> User</a>
+                                        <a href="{% static '#' %}"><i class="fas fa-user-circle"></i> User</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>
+                                        <a href="{% static '#' %}"><i class="fas fa-comments"></i> 26 Comments</a>
                                     </li>
                                 </ul>
                             </div>
                             <h4>
-                                <a href="blog-single-with-sidebar.html">Discovery earnestly public commanded mentions.</a>
+                                <a href="{% static 'blog-single-with-sidebar.html' %}">Discovery earnestly public commanded mentions.</a>
                             </h4>
                             <p>
                                 Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.  
@@ -828,22 +828,22 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
+                            <a href="{% static 'blog-single-with-sidebar.html' %}"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
                             <div class="date"><strong>25</strong> <span>Aug</span></div>
                         </div>
                         <div class="info">
                             <div class="meta">
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="fas fa-user-circle"></i> Admin</a>
+                                        <a href="{% static '#' %}"><i class="fas fa-user-circle"></i> Admin</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fas fa-comments"></i> 35 Comments</a>
+                                        <a href="{% static '#' %}"><i class="fas fa-comments"></i> 35 Comments</a>
                                     </li>
                                 </ul>
                             </div>
                             <h4>
-                                <a href="blog-single-with-sidebar.html">Considered imprudence of he friendship boisterous.</a>
+                                <a href="{% static 'blog-single-with-sidebar.html' %}">Considered imprudence of he friendship boisterous.</a>
                             </h4>
                             <p>
                                 Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.  
@@ -857,22 +857,22 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="assets/img/800x600.png" alt="Thumb"></a>
+                            <a href="{% static 'blog-single-with-sidebar.html' %}"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
                             <div class="date"><strong>05</strong> <span>Jul</span></div>
                         </div>
                         <div class="info">
                             <div class="meta">
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="fas fa-user-circle"></i> user</a>
+                                        <a href="{% static '#' %}"><i class="fas fa-user-circle"></i> user</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fas fa-comments"></i> 12 Comments</a>
+                                        <a href="{% static '#' %}"><i class="fas fa-comments"></i> 12 Comments</a>
                                     </li>
                                 </ul>
                             </div>
                             <h4>
-                                <a href="blog-single-with-sidebar.html">Overcame breeding or my concerns removing desirous.</a>
+                                <a href="{% static 'blog-single-with-sidebar.html' %}">Overcame breeding or my concerns removing desirous.</a>
                             </h4>
                             <p>
                                 Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.  
@@ -904,7 +904,7 @@
                 </div>
             </div>
             <div class="illustration">
-                <img src="assets/img/illustration/1.png" alt="illustration">
+                <img src="{% static 'assets/img/illustration/1.png' %}" alt="illustration">
             </div>
         </div>
     </div>
@@ -918,7 +918,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
+                            <img src="{% static 'assets/img/logo-light.png' %}" alt="Logo">
                             <p>
                                 Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing.
                             </p>
@@ -933,22 +933,22 @@
                             <h4 class="widget-title">Quick LInk</h4>
                             <ul>
                                 <li>
-                                    <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
+                                    <a href="{% static 'index.html' %}"><i class="fas fa-angle-right"></i> Home</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> About us</a>
+                                    <a href="{% static 'about-us.html' %}"><i class="fas fa-angle-right"></i> About us</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> Compnay History</a>
+                                    <a href="{% static 'about-us.html' %}"><i class="fas fa-angle-right"></i> Compnay History</a>
                                 </li>
                                 <li>
-                                    <a href="services.html"><i class="fas fa-angle-right"></i> Features</a>
+                                    <a href="{% static 'services.html' %}"><i class="fas fa-angle-right"></i> Features</a>
                                 </li>
                                 <li>
-                                    <a href="blog-with-sidebar.html"><i class="fas fa-angle-right"></i> Blog Page</a>
+                                    <a href="{% static 'blog-with-sidebar.html' %}"><i class="fas fa-angle-right"></i> Blog Page</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> Login</a>
+                                    <a href="{% static 'about-us.html' %}"><i class="fas fa-angle-right"></i> Login</a>
                                 </li>
                             </ul>
                         </div>
@@ -958,22 +958,22 @@
                             <h4 class="widget-title">Community</h4>
                             <ul>
                                 <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Career</a>
+                                    <a href="{% static 'services-details.html' %}"><i class="fas fa-angle-right"></i> Career</a>
                                 </li>
                                 <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Leadership</a>
+                                    <a href="{% static 'services-details.html' %}"><i class="fas fa-angle-right"></i> Leadership</a>
                                 </li>
                                 <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Strategy</a>
+                                    <a href="{% static 'services-details.html' %}"><i class="fas fa-angle-right"></i> Strategy</a>
                                 </li>
                                 <li>
-                                    <a href="services.html"><i class="fas fa-angle-right"></i> Services</a>
+                                    <a href="{% static 'services.html' %}"><i class="fas fa-angle-right"></i> Services</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> History</a>
+                                    <a href="{% static 'about-us.html' %}"><i class="fas fa-angle-right"></i> History</a>
                                 </li>
                                 <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Components</a>
+                                    <a href="{% static 'services-details.html' %}"><i class="fas fa-angle-right"></i> Components</a>
                                 </li>
                             </ul>
                         </div>
@@ -998,7 +998,7 @@
                                         </div>
                                         <div class="content">
                                             <strong>Email:</strong>
-                                            <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                            <a href="{% static 'mailto:info@validtheme.com' %}">info@validtheme.com</a>
                                         </div>
                                     </li>
                                     <li>
@@ -1007,7 +1007,7 @@
                                         </div>
                                         <div class="content">
                                             <strong>Phone:</strong>
-                                            <a href="tel:2151234567">+123 34598768</a>
+                                            <a href="{% static 'tel:2151234567' %}">+123 34598768</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -1022,18 +1022,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <p>&copy; Copyright 2021. All Rights Reserved by <a href="https://themeforest.net/user/validthemes/portfolio">validthemes</a></p>
+                        <p>&copy; Copyright 2021. All Rights Reserved by <a href="{% static 'https://themeforest.net/user/validthemes/portfolio' %}">validthemes</a></p>
                     </div>
                     <div class="col-lg-6 text-end link">
                         <ul>
                             <li>
-                                <a href="about-us.html">Terms</a>
+                                <a href="{% static 'about-us.html' %}">Terms</a>
                             </li>
                             <li>
-                                <a href="about-us.html">Privacy</a>
+                                <a href="{% static 'about-us.html' %}">Privacy</a>
                             </li>
                             <li>
-                                <a href="contact.html">Support</a>
+                                <a href="{% static 'contact.html' %}">Support</a>
                             </li>
                         </ul>
                     </div>
@@ -1046,22 +1046,22 @@
     
     <!-- jQuery Frameworks
     ============================================= -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/modernizr.custom.13711.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/progress-bar.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/count-to.js"></script>
-    <script src="assets/js/YTPlayer.min.js"></script>
-    <script src="assets/js/validnavs.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/modernizr.custom.13711.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/count-to.js' %}"></script>
+    <script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+    <script src="{% static 'assets/js/validnavs.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
 </html>
