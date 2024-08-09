@@ -169,7 +169,7 @@
                     <!-- Start Atribute Navigation -->
                     <div class="attr-nav">
                         <ul>
-                            <li class="button"><a href="contact.html">Login</a></li>
+                            <li class="button"><a href="login.html">Login</a></li>
                         </ul>
                     </div>
                     <!-- End Atribute Navigation -->
@@ -187,8 +187,8 @@
 
    <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area auto-height bg-fixed banner-style-four text-default" style="background-image: url(assets/img/shape/1.jpg);">
-        <div class="shape-bottom" style="background-image: url(assets/img/shape/44.png);"></div>
+    <div class="banner-area auto-height bg-fixed banner-style-four text-default" style="background-image: url('{% static "assets/img/shape/1.jpg" %}');">
+        <div class="shape-bottom" style="background-image: url('{% static "assets/img/shape/44.png" %}');"></div>
         <div class="container">
             <div class="double-items">
                 <div class="row align-center">
@@ -445,7 +445,7 @@
 
     <!-- Start Team 
     ============================================= -->
-    <div id="team" class="team-area default-padding bg-gray bg-cover bottom-less" style="background-image: url(assets/img/shape/33.png);">
+    <div id="team" class="team-area default-padding bg-gray bg-cover bottom-less" style="background-image: url('{% static "assets/img/shape/33.png" %}');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -554,7 +554,7 @@
 
     <!-- Start Testimonials 
     ============================================= -->
-    <div class="testimonials-area text-light shadow dark bg-fixed carousel-shadow default-padding" style="background-image: url(assets/img/shape/2.jpg);"> 
+    <div class="testimonials-area text-light shadow dark bg-fixed carousel-shadow default-padding"style="background-image: url('{% static "assets/img/shape/2.jpg" %}');">=
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -860,7 +860,7 @@
     <!-- Start Free Trial 
     ============================================= -->
     <div class="free-trial-area text-light text-center relative">
-        <div class="trial-box" style="background-image: url(assets/img/shape/8.png);">
+        <div class="trial-box" style="background-image: url('{% static "assets/img/shape/8.png" %}');"></div>">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3">
@@ -878,10 +878,8 @@
             </div>
         </div>
     </div>
-    <!-- End Free Trial -->
-
-    <!-- Start Footer 
-    ============================================= -->
+    <!-- End Free Trial --><!-- Start Footer 
+        ============================================= -->
     <footer class="bg-dark text-light">
         <div class="container">
             <div class="f-items default-padding">
@@ -890,11 +888,12 @@
                         <div class="f-item about">
                             <img src="{% static 'assets/img/logo-light.png' %}" alt="Logo">
                             <p>
-                                Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing.
+                                Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy
+                                for you are out. Fertile how old address did showing.
                             </p>
                             <form action="#">
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="arrow_right"></i></button>  
+                                <button type="submit"> <i class="arrow_right"></i></button>
                             </form>
                         </div>
                     </div>
@@ -992,7 +991,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <p>&copy; Copyright 2021. All Rights Reserved by <a href="https://themeforest.net/user/validthemes/portfolio">validthemes</a></p>
+                        <p>&copy; Copyright 2021. All Rights Reserved by <a
+                                href="https://themeforest.net/user/validthemes/portfolio">validthemes</a></p>
                     </div>
                     <div class="col-lg-6 text-end link">
                         <ul>
@@ -1015,7 +1015,7 @@
     <!-- End Footer -->
     
     <!-- jQuery Frameworks
-    ============================================= -->
+        ============================================= -->
     <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
     <script src="{% static 'assets/js/popper.min.js' %}"></script>
     <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
@@ -1032,6 +1032,7 @@
     <script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
     <script src="{% static 'assets/js/validnavs.js' %}"></script>
     <script src="{% static 'assets/js/main.js' %}"></script>
-
-</body>
-</html>
+    
+    </body>
+    
+    </html>
