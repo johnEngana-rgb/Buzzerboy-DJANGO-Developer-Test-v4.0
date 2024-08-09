@@ -336,3 +336,14 @@
 <script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
 <script src="{% static 'assets/js/validnavs.js' %}"></script>
 <script src="{% static 'assets/js/main.js' %}"></script>
+
+{% if messages %}
+<div class="container">
+  {% for message in messages %}
+  <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
