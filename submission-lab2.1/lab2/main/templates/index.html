@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Appku - Software Landing Page">
     {% load static %}
+    {% load i18n %}
     <!-- ========== Page Title ========== -->
     <title>Appku - Software Landing Page</title>
 
@@ -62,16 +63,18 @@
                 <div class="row align-center">
 
                     <div class="col-lg-6 info">
-                        <h4 class="wow fadeInRight"><strong># No1</strong> Trending Apps On Play Store</h4>
-                        <h2 class="wow fadeInLeft" data-wow-defaul="300ms">Get Benifit By Using Trending Apps </h2>
+                        <h4 class="wow fadeInRight"><strong>"# No1"</strong> {% trans "Trending Apps On Play Store" %}</h4>
+                        <h2 class="wow fadeInLeft" data-wow-defaul="300ms">{% trans "Get Benefit By Using Trending Apps" %}</h2>
+                        {% blocktrans %}
                         <p class="wow fadeInLeft" data-wow-delay="500ms">
                             Lasted hunted enough an up seeing in lively letter. Had judgment out opinions property the supplied.
                         </p>
-                        <a class="btn btn-md circle btn-gradient effect wow fadeInUp" data-wow-delay="700ms" href="#">Start a free trial <i class="fas fa-angle-right"></i></a>
+                        {% endblocktrans %}
+                        <a class="btn btn-md circle btn-gradient effect wow fadeInUp" data-wow-delay="700ms" href="#">{% trans "Start a free trial" %} <i class="fas fa-angle-right"></i></a>
                     </div>
 
                      <div class="col-lg-6 thumb wow fadeInRight" data-wow-delay="900ms">
-                        <img src="{% static 'assets/img/illustration/15.png' %}" alt="Thumb">
+                        <img src="{% static 'assets/img/illustration/15.png' %}" alt="{% trans "Thumb" %}">
                     </div>
                     
                 </div>
@@ -87,11 +90,13 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2>We are Better Here is Why</h2>
+                        <h2>{% trans "We are Better Here is Why" %}</h2>
                         <div class="devider"></div>
+                        {% blocktrans %}
                         <p>
                             Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future. 
                         </p>
+                        {% endblocktrans %}
                     </div>
                 </div>
             </div>
@@ -102,13 +107,15 @@
                 <div class="features-style-four col-lg-4 col-md-6">
                     <div class="feature-style-four-item">
                         <div class="icon">
-                            <img src="{% static 'assets/img/icon/app/1.png' %}" alt="Icon">
+                            <img src="{% static 'assets/img/icon/app/1.png' %}" alt="{% trans "Icon" %}">
                         </div>
                         <div class="info">
-                            <h4>Fully Secured</h4>
+                            <h4>{% trans "Fully Secured" %}</h4>
+                            {% blocktrans %}
                             <p>
-                                Everything melancholy uncommonly but excellence an to impression. ladies she basket season age her uneasy saw.
+                                Everything melancholy uncommonly but excellence an to impression. Ladies she basket season age her uneasy saw.
                             </p>
+                            {% endblocktrans %}
                         </div>
                     </div>
                 </div>
@@ -117,13 +124,15 @@
                 <div class="features-style-four col-lg-4 col-md-6">
                     <div class="feature-style-four-item">
                         <div class="icon">
-                            <img src="{% static 'assets/img/icon/app/2.png' %}" alt="Icon">
+                            <img src="{% static 'assets/img/icon/app/2.png' %}" alt="{% trans "Icon" %}">
                         </div>
                         <div class="info">
-                            <h4>Easy to Edit</h4>
+                            <h4>{% trans "Easy to Edit" %}</h4>
+                            {% blocktrans %}
                             <p>
-                                Everything melancholy uncommonly but excellence an to impression. ladies she basket season age her uneasy saw.
+                                Everything melancholy uncommonly but excellence an to impression. Ladies she basket season age her uneasy saw.
                             </p>
+                            {% endblocktrans %}
                         </div>
                     </div>
                 </div>
@@ -132,13 +141,15 @@
                 <div class="features-style-four col-lg-4 col-md-6">
                     <div class="feature-style-four-item">
                         <div class="icon">
-                            <img src="{% static 'assets/img/icon/app/3.png' %}" alt="Icon">
+                            <img src="{% static 'assets/img/icon/app/3.png' %}" alt="{% trans "Icon" %}">
                         </div>
                         <div class="info">
-                            <h4>Design & Branding</h4>
+                            <h4>{% trans "Design & Branding" %}</h4>
+                            {% blocktrans %}
                             <p>
-                                Everything melancholy uncommonly but excellence an to impression. ladies she basket season age her uneasy saw.
+                                Everything melancholy uncommonly but excellence an to impression. Ladies she basket season age her uneasy saw.
                             </p>
+                            {% endblocktrans %}
                         </div>
                     </div>
                 </div>
@@ -150,35 +161,37 @@
 
     <!-- Start Video
     ============================================= -->
-    <div class="video-style-one-area text-light shadow dark video-bg-live bg-cover" style="background-image: url(assets/img/2440x1578.png);">
+    <div class="video-style-one-area text-light shadow dark video-bg-live bg-cover" style="background-image: url('{% static "assets/img/2440x1578.png" %}');">
         <div class="player bg-cover" data-property="{videoURL:'cAN0NI5IZ5c',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:0, opacity:1, quality: 'highres'}"></div>
         <div class="video-content-info default-padding shadow dark">
             <div class="container">
                 <div class="row align-center">
                     <div class="col-lg-6 video-style-one-item">
-                        <h2>Creative New Apps for <br> IT, Retail, & Banking</h2>
+                        <h2>{% trans "Creative New Apps for IT, Retail, & Banking" %}</h2>
+                        {% blocktrans %}
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid nostrum, aut, perspiciatis, iusto animi incidunt ab recusandae molestiae repellendus distinctio maxime ex architecto vero fuga iste pariatur alias vitae tempore.
                         </p>
+                        {% endblocktrans %}
                         <div class="fun-facto-box">
                             <div class="fun-fact">
                                 <div class="counter">
                                     <div class="timer" data-to="18" data-speed="2000">18</div>
                                     <div class="operator">K</div>
                                 </div>
-                                <span class="medium">App Downloads</span>
+                                <span class="medium">{% trans "App Downloads" %}</span>
                             </div>
                             <div class="fun-fact">
                                 <div class="counter">
                                     <div class="timer" data-to="98" data-speed="2000">98</div>
                                     <div class="operator">%</div>
                                 </div>
-                                <span class="medium">Positive Rating</span>
+                                <span class="medium">{% trans "Positive Rating" %}</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 video-style-one-item text-center">
-                        <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube video-btn"><i class="fas fa-play"></i>Watch Promo</a>
+                        <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube video-btn"><i class="fas fa-play"></i>{% trans "Watch Promo" %}</a>
                     </div>
                     
                 </div>
@@ -194,49 +207,61 @@
             <div class="row align-center">
                 <div class="col-lg-3 text-end app-feature-style-one">
                     <div class="app-feature-item">
-                        <h4>Manaement</h4>
+                        <h4>{% trans "Management" %}</h4>
+                        {% blocktrans %}
                         <p>
                             Attention are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
                         </p>
+                        {% endblocktrans %}
                     </div>
                     <div class="app-feature-item">
-                        <h4>Time Tracking</h4>
+                        <h4>{% trans "Time Tracking" %}</h4>
+                        {% blocktrans %}
                         <p>
                             Business are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
                         </p>
+                        {% endblocktrans %}
                     </div>
                     <div class="app-feature-item">
-                        <h4>Payment</h4>
+                        <h4>{% trans "Payment" %}</h4>
+                        {% blocktrans %}
                         <p>
                             Providing are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
                         </p>
+                        {% endblocktrans %}
                     </div>
                 </div>
                 <div class="col-lg-6 text-center app-feature-style-one">
                     <div class="app-feature-item">
                         <div class="app-feature-thumb">
-                            <img src="{% static 'assets/img/illustration/17.png' %}" alt="Thumb">
+                            <img src="{% static 'assets/img/illustration/17.png' %}" alt="{% trans "Thumb" %}">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 app-feature-style-one">
                     <div class="app-feature-item">
-                        <h4>Productivity</h4>
+                        <h4>{% trans "Productivity" %}</h4>
+                        {% blocktrans %}
                         <p>
                             Attention are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
                         </p>
+                        {% endblocktrans %}
                     </div>
                     <div class="app-feature-item">
-                        <h4>Time Tracking</h4>
+                        <h4>{% trans "Time Tracking" %}</h4>
+                        {% blocktrans %}
                         <p>
                             Providing are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
                         </p>
+                        {% endblocktrans %}
                     </div>
                     <div class="app-feature-item">
-                        <h4>Live Support</h4>
+                        <h4>{% trans "Live Support" %}</h4>
+                        {% blocktrans %}
                         <p>
                             Business are had allowance own perceived abilities. Unfeeling are had allowance own perceived abilities.
                         </p>
+                        {% endblocktrans %}
                     </div>
                 </div>
             </div>
@@ -251,11 +276,13 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2>App Screnshoot</h2>
+                        <h2>{% trans "App Screenshot" %}</h2>
                         <div class="devider"></div>
+                        {% blocktrans %}
                         <p>
                             Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future. 
                         </p>
+                        {% endblocktrans %}
                     </div>
                 </div>
             </div>
@@ -267,7 +294,7 @@
                         <!-- Single item -->
                         <div class="item">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/screenshot/1.png' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/screenshot/1.png' %}" alt="{% trans "Thumb" %}">
                                 <a href="{% static 'assets/img/screenshot/1.png' %}" class="item popup-gallery theme video-play-button">
                                     <i class="fa fa-plus"></i>
                                 </a>
@@ -277,7 +304,7 @@
                         <!-- Single item -->
                         <div class="item">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/screenshot/2.png' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/screenshot/2.png' %}" alt="{% trans "Thumb" %}">
                                 <a href="{% static 'assets/img/screenshot/2.png' %}" class="item popup-gallery theme video-play-button">
                                     <i class="fa fa-plus"></i>
                                 </a>
@@ -287,7 +314,7 @@
                         <!-- Single item -->
                         <div class="item">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/screenshot/3.png' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/screenshot/3.png' %}" alt="{% trans "Thumb" %}">
                                 <a href="{% static 'assets/img/screenshot/3.png' %}" class="item popup-gallery theme video-play-button">
                                     <i class="fa fa-plus"></i>
                                 </a>
@@ -297,7 +324,7 @@
                         <!-- Single item -->
                         <div class="item">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/screenshot/4.png' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/screenshot/4.png' %}" alt="{% trans "Thumb" %}">
                                 <a href="{% static 'assets/img/screenshot/4.png' %}" class="item popup-gallery theme video-play-button">
                                     <i class="fa fa-plus"></i>
                                 </a>
@@ -318,11 +345,13 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2>Innovative Team</h2>
+                        <h2>{% trans "Innovative Team" %}</h2>
                         <div class="devider"></div>
+                        {% blocktrans %}
                         <p>
                             Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future. 
                         </p>
+                        {% endblocktrans %}
                     </div>
                 </div>
             </div>
@@ -334,7 +363,7 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="{% trans "Thumb" %}">
                                 <div class="social">
                                     <input type="checkbox" id="toggle" class="share-toggle" hidden>
                                     <label for="toggle" class="share-button">
@@ -352,8 +381,8 @@
                                 </div>
                             </div>
                             <div class="info">
-                                <h4><a href="team-details.html">Ahem Natasha</a></h4>
-                                <span>Operations officer</span>
+                                <h4><a href="team-details.html">{% trans "Ahem Natasha" %}</a></h4>
+                                <span>{% trans "Operations officer" %}</span>
                             </div>
                         </div>
                     </div>
@@ -362,7 +391,7 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="{% trans "Thumb" %}">
                                 <div class="social">
                                     <input type="checkbox" id="toggle2" class="share-toggle" hidden>
                                     <label for="toggle2" class="share-button">
@@ -380,8 +409,8 @@
                                 </div>
                             </div>
                             <div class="info">
-                                <h4><a href="team-details.html">Devid mark</a></h4>
-                                <span>Graphic designer</span>
+                                <h4><a href="team-details.html">{% trans "Devid Mark" %}</a></h4>
+                                <span>{% trans "Graphic designer" %}</span>
                             </div>
                         </div>
                     </div>
@@ -390,7 +419,7 @@
                     <div class="single-item col-lg-4 col-md-6">
                         <div class="item">
                             <div class="thumb">
-                                <img src="{% static 'assets/img/800x900.png' %}" alt="Thumb">
+                                <img src="{% static 'assets/img/800x900.png' %}" alt="{% trans "Thumb" %}">
                                 <div class="social">
                                     <input type="checkbox" id="toggle3" class="share-toggle" hidden>
                                     <label for="toggle3" class="share-button">
@@ -408,8 +437,8 @@
                                 </div>
                             </div>
                             <div class="info">
-                                <h4><a href="team-details.html">Brave Hammam</a></h4>
-                                <span>Web developer</span>
+                                <h4><a href="team-details.html">{% trans "Brave Hammam" %}</a></h4>
+                                <span>{% trans "Web developer" %}</span>
                             </div>
                         </div>
                     </div>
@@ -422,16 +451,18 @@
 
     <!-- Start Testimonials 
     ============================================= -->
-    <div class="testimonials-area text-light shadow dark bg-fixed carousel-shadow default-padding"style="background-image: url('{% static "assets/img/shape/2.jpg" %}');">=
+    <div class="testimonials-area text-light shadow dark bg-fixed carousel-shadow default-padding" style="background-image: url('{% static "assets/img/shape/2.jpg" %}');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2>What people say</h2>
+                        <h2>{% trans "What people say" %}</h2>
                         <div class="devider"></div>
+                        {% blocktrans %}
                         <p>
                             Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future. 
                         </p>
+                        {% endblocktrans %}
                     </div>
                 </div>
             </div>
@@ -444,19 +475,21 @@
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
-                                    <img src="{% static 'assets/img/100x100.png' %}" alt="Author">
+                                    <img src="{% static 'assets/img/100x100.png' %}" alt="{% trans "Author" %}">
                                     <div class="content">
-                                        <h4>Devid Warner</h4>
-                                        <span> Managing Director</span>
+                                        <h4>{% trans "Devid Warner" %}</h4>
+                                        <span>{% trans "Managing Director" %}</span>
                                     </div>
                                 </div>
                                 <div class="info">
+                                    {% blocktrans %}
                                     <p>
-                                        Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future. 
+                                        Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accessing to the point. very extreme future.
                                     </p>
+                                    {% endblocktrans %}
                                 </div>
                                 <div class="reason">
-                                    <h5>Design Quality</h5>
+                                    <h5>{% trans "Design Quality" %}</h5>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -470,19 +503,21 @@
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
-                                    <img src="{% static 'assets/img/100x100.png' %}" alt="Author">
+                                    <img src="{% static 'assets/img/100x100.png' %}" alt="{% trans "Author" %}">
                                     <div class="content">
-                                        <h4>Pruasuj Natasha</h4>
-                                        <span> Theme Developer</span>
+                                        <h4>{% trans "Pruasuj Natasha" %}</h4>
+                                        <span>{% trans "Theme Developer" %}</span>
                                     </div>
                                 </div>
                                 <div class="info">
+                                    {% blocktrans %}
                                     <p>
-                                        Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future.  
+                                        Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accessing to the point. very extreme future.
                                     </p>
+                                    {% endblocktrans %}
                                 </div>
                                 <div class="reason">
-                                    <h5>Customer Support</h5>
+                                    <h5>{% trans "Customer Support" %}</h5>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -496,19 +531,21 @@
                             <!-- Single Item -->
                             <div class="item">
                                 <div class="provider">
-                                    <img src="{% static 'assets/img/100x100.png' %}" alt="Author">
+                                    <img src="{% static 'assets/img/100x100.png' %}" alt="{% trans "Author" %}">
                                     <div class="content">
-                                        <h4>Koyel Anderson</h4>
-                                        <span> Project Manager</span>
+                                        <h4>{% trans "Koyel Anderson" %}</h4>
+                                        <span>{% trans "Project Manager" %}</span>
                                     </div>
                                 </div>
                                 <div class="info">
+                                    {% blocktrans %}
                                     <p>
-                                        Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future.  
+                                        Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accessing to the point. very extreme future.
                                     </p>
+                                    {% endblocktrans %}
                                 </div>
                                 <div class="reason">
-                                    <h5>User Friendly</h5>
+                                    <h5>{% trans "User Friendly" %}</h5>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -534,11 +571,13 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2>Our Packages</h2>
+                        <h2>{% trans "Our Packages" %}</h2>
                         <div class="devider"></div>
+                        {% blocktrans %}
                         <p>
                             Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future. 
                         </p>
+                        {% endblocktrans %}
                     </div>
                 </div>
             </div>
@@ -551,17 +590,17 @@
                         <div class="pricing-item">
                             <i class="fas fa-rocket"></i>
                             <div class="pricing-header">
-                                <h4>Free trial</h4>
+                                <h4>{% trans "Free trial" %}</h4>
                             </div>
                             <div class="price">
-                                <h2><sup>$</sup>0 <sub>/ Monthly</sub></h2>
+                                <h2><sup>$</sup>0 <sub>{% trans "/ Monthly" %}</sub></h2>
                             </div>
                             <ul>
-                                <li><i class="fas fa-check"></i> Demo file</li>
-                                <li><i class="fas fa-check"></i> 10 GB Dedicated Hosting free</li>
-                                <li><i class="fas fa-times"></i> Live Support</li>
+                                <li><i class="fas fa-check"></i> {% trans "Demo file" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "10 GB Dedicated Hosting free" %}</li>
+                                <li><i class="fas fa-times"></i> {% trans "Live Support" %}</li>
                             </ul>
-                            <a class="btn circle btn-gray btn-sm" href="#">Purchase Plan</a>
+                            <a class="btn circle btn-gray btn-sm" href="#">{% trans "Purchase Plan" %}</a>
                         </div>
                     </div>
                     <!-- End Single Itme -->
@@ -571,18 +610,18 @@
                         <div class="pricing-item">
                             <i class="fas fa-gem"></i>
                             <div class="pricing-header">
-                                <h4>Regular</h4>
+                                <h4>{% trans "Regular" %}</h4>
                             </div>
                             <div class="price">
-                                <h2><sup>$</sup>29 <sub>/ Monthly</sub></h2>
+                                <h2><sup>$</sup>29 <sub>{% trans "/ Monthly" %}</sub></h2>
                             </div>
                             <ul>
-                                <li><i class="fas fa-check"></i> Demo file</li>
-                                <li><i class="fas fa-check"></i> 10 GB Dedicated Hosting free</li>
-                                <li><i class="fas fa-check"></i> Lifetime free Support</li>
-                                <li><i class="fas fa-times"></i> Live Support</li>
+                                <li><i class="fas fa-check"></i> {% trans "Demo file" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "10 GB Dedicated Hosting free" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "Lifetime free Support" %}</li>
+                                <li><i class="fas fa-times"></i> {% trans "Live Support" %}</li>
                             </ul>
-                            <a class="btn circle btn-theme-effect btn-sm" href="#">Purchase Plan</a>
+                            <a class="btn circle btn-theme-effect btn-sm" href="#">{% trans "Purchase Plan" %}</a>
                         </div>
                     </div>
                     <!-- End Single Itme -->
@@ -592,19 +631,19 @@
                         <div class="pricing-item">
                             <i class="fa fa-chart-pie"></i>
                             <div class="pricing-header">
-                                <h4>Extended</h4>
+                                <h4>{% trans "Extended" %}</h4>
                             </div>
                             <div class="price">
-                                <h2><sup>$</sup>59 <sub>/ Monthly</sub></h2>
+                                <h2><sup>$</sup>59 <sub>{% trans "/ Monthly" %}</sub></h2>
                             </div>
                             <ul>
-                                <li><i class="fas fa-check"></i> Demo file</li>
-                                <li><i class="fas fa-check"></i> 10 GB Dedicated Hosting free</li>
-                                <li><i class="fas fa-check"></i> Lifetime free Support</li>
-                                <li><i class="fas fa-check"></i> SEO Optimized</li>
-                                <li><i class="fas fa-check"></i> Live Support</li>
+                                <li><i class="fas fa-check"></i> {% trans "Demo file" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "10 GB Dedicated Hosting free" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "Lifetime free Support" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "SEO Optimized" %}</li>
+                                <li><i class="fas fa-check"></i> {% trans "Live Support" %}</li>
                             </ul>
-                            <a class="btn circle btn-gray btn-sm" href="#">Purchase Plan</a>
+                            <a class="btn circle btn-gray btn-sm" href="#">{% trans "Purchase Plan" %}</a>
                         </div>
                     </div>
                     <!-- End Single Itme -->
@@ -621,11 +660,13 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2>Latest News</h2>
+                        <h2>{% trans "Latest News" %}</h2>
                         <div class="devider"></div>
+                        {% blocktrans %}
                         <p>
                             Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it curiosity departure ourselves very extreme future. 
                         </p>
+                        {% endblocktrans %}
                     </div>
                 </div>
             </div>
@@ -637,26 +678,28 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
-                            <div class="date"><strong>18</strong> <span>Apr</span></div>
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="{% trans "Thumb" %}"></a>
+                            <div class="date"><strong>18</strong> <span>{% trans "Apr" %}</span></div>
                         </div>
                         <div class="info">
                             <div class="meta">
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="fas fa-user-circle"></i> User</a>
+                                        <a href="#"><i class="fas fa-user-circle"></i> {% trans "User" %}</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>
+                                        <a href="#"><i class="fas fa-comments"></i> {% trans "26 Comments" %}</a>
                                     </li>
                                 </ul>
                             </div>
                             <h4>
-                                <a href="blog-single-with-sidebar.html">Discovery earnestly public commanded mentions.</a>
+                                <a href="blog-single-with-sidebar.html">{% trans "Discovery earnestly public commanded mentions." %}</a>
                             </h4>
+                            {% blocktrans %}
                             <p>
                                 Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.  
                             </p>
+                            {% endblocktrans %}
                         </div>
                     </div>
                 </div>
@@ -666,26 +709,28 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
-                            <div class="date"><strong>25</strong> <span>Aug</span></div>
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="{% trans "Thumb" %}"></a>
+                            <div class="date"><strong>25</strong> <span>{% trans "Aug" %}</span></div>
                         </div>
                         <div class="info">
                             <div class="meta">
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="fas fa-user-circle"></i> Admin</a>
+                                        <a href="#"><i class="fas fa-user-circle"></i> {% trans "Admin" %}</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fas fa-comments"></i> 35 Comments</a>
+                                        <a href="#"><i class="fas fa-comments"></i> {% trans "35 Comments" %}</a>
                                     </li>
                                 </ul>
                             </div>
                             <h4>
-                                <a href="blog-single-with-sidebar.html">Considered imprudence of he friendship boisterous.</a>
+                                <a href="blog-single-with-sidebar.html">{% trans "Considered imprudence of he friendship boisterous." %}</a>
                             </h4>
+                            {% blocktrans %}
                             <p>
                                 Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.  
                             </p>
+                            {% endblocktrans %}
                         </div>
                     </div>
                 </div>
@@ -695,26 +740,28 @@
                 <div class="single-item col-lg-4 col-md-6">
                     <div class="item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
-                            <div class="date"><strong>05</strong> <span>Jul</span></div>
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="{% trans "Thumb" %}"></a>
+                            <div class="date"><strong>05</strong> <span>{% trans "Jul" %}</span></div>
                         </div>
                         <div class="info">
                             <div class="meta">
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="fas fa-user-circle"></i> user</a>
+                                        <a href="#"><i class="fas fa-user-circle"></i> {% trans "User" %}</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fas fa-comments"></i> 12 Comments</a>
+                                        <a href="#"><i class="fas fa-comments"></i> {% trans "12 Comments" %}</a>
                                     </li>
                                 </ul>
                             </div>
                             <h4>
-                                <a href="blog-single-with-sidebar.html">Overcame breeding or my concerns removing desirous.</a>
+                                <a href="blog-single-with-sidebar.html">{% trans "Overcame breeding or my concerns removing desirous." %}</a>
                             </h4>
+                            {% blocktrans %}
                             <p>
                                 Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.  
                             </p>
+                            {% endblocktrans %}
                         </div>
                     </div>
                 </div>
@@ -728,21 +775,21 @@
     <!-- Start Free Trial 
     ============================================= -->
     <div class="free-trial-area text-light text-center relative">
-        <div class="trial-box" style="background-image: url('{% static "assets/img/shape/8.png" %}');"></div>">
+        <div class="trial-box" style="background-image: url('{% static "assets/img/shape/8.png" %}');"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3">
-                        <h5>Free Trial</h5>
-                        <h2>Start Your 14 Days Free <br> Trials Today!</h2>
+                        <h5>{% trans "Free Trial" %}</h5>
+                        <h2>{% trans "Start Your 14 Days Free Trials Today!" %}</h2>
                         <form action="#">
-                            <input type="email" placeholder="Your Email" class="form-control" name="email">
-                            <button type="submit"> Free Trial</button>  
+                            <input type="email" placeholder="{% trans "Your Email" %}" class="form-control" name="email">
+                            <button type="submit">{% trans "Free Trial" %}</button>  
                         </form>
                     </div>
                 </div>
             </div>
             <div class="illustration">
-                <img src="{% static 'assets/img/illustration/1.png' %}" alt="illustration">
+                <img src="{% static 'assets/img/illustration/1.png' %}" alt="{% trans "Illustration" %}">
             </div>
         </div>
     </div>
@@ -768,5 +815,3 @@
     <script src="{% static 'assets/js/main.js' %}"></script>
     
     </body>
-    
-    </html>

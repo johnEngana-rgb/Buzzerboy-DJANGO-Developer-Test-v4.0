@@ -7,6 +7,10 @@ def home(request):
 
 
 def render_html(request, template_name):
+    # Remove 'profile/' prefix if it exists
+    if template_name.startswith('profile/'):
+        template_name = template_name.replace('profile/', '', 1)
+
     try:
         return render(request, template_name)
     except TemplateDoesNotExist:

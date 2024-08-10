@@ -1,4 +1,7 @@
-from django.contrib.auth.views import LoginView, LogoutView, PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView, PasswordResetCompleteView, PasswordChangeView
+from django.contrib.auth.views import (
+    LoginView, LogoutView, PasswordResetView, PasswordResetDoneView,
+    PasswordResetConfirmView, PasswordResetCompleteView, PasswordChangeView
+)
 from .forms import EmailAuthenticationForm, CustomPasswordResetForm, SignupForm
 from django.shortcuts import get_object_or_404, render, redirect
 from .models import UserProfile
@@ -62,18 +65,8 @@ def login_view(request):
     form = EmailAuthenticationForm()
     return render(request, 'login.html', {'form': form})
 
-
-def switch_profile(request, profile_id):
-    profile = UserProfile.objects.get(id=profile_id)
-    if profile.user == request.user:
-        request.session['active_profile_id'] = profile.id
-        translation.activate(profile.language)
-        request.session['django_language'] = profile.language
-    return redirect(request.META.get('HTTP_REFERER', 'index'))
-
-
 def get_active_profile(request):
-    profile_id = request.session.get('active_profile')
+    profile_id = request.session.get('selected_profile_id')
     if profile_id:
         try:
             return UserProfile.objects.get(id=profile_id, user=request.user)
@@ -91,7 +84,6 @@ def some_view(request):
     # Use the active profile for your logic
     return render(request, 'index.html', {'active_profile': active_profile})
 
-
 def signup(request):
     if request.method == 'POST':
         form = SignupForm(request.POST)
@@ -105,18 +97,28 @@ def signup(request):
         form = SignupForm()
     return render(request, 'signup.html', {'form': form})
 
-
-
 class CustomPasswordChangeView(PasswordChangeView):
     form_class = PasswordChangeForm
     template_name = 'change_password.html'
     success_url = reverse_lazy('password_change_done')  # Redirect to a success page after password change
 
-
-
 @login_required
 def profile_view(request):
-    return render(request, 'profile.html')
+    user_profiles = UserProfile.objects.filter(user=request.user)
+
+    # Try to get the selected profile ID from the session
+    selected_profile_id = request.session.get('selected_profile_id')
+    if selected_profile_id:
+        user_profile = get_object_or_404(UserProfile, id=selected_profile_id, user=request.user)
+    else:
+        # If no profile is selected, use the first profile as the default
+        user_profile = user_profiles.first()
+        request.session['selected_profile_id'] = user_profile.id
+
+    return render(request, 'profile.html', {
+        'user_profiles': user_profiles,
+        'user_profile': user_profile,
+    })
 
 @login_required
 def select_profile(request):
@@ -125,9 +127,22 @@ def select_profile(request):
     if request.method == 'POST':
         profile_id = request.POST.get('profile_id')
         user_profile = get_object_or_404(UserProfile, id=profile_id, user=request.user)
-        request.session['active_profile_id'] = user_profile.id
+        request.session['selected_profile_id'] = user_profile.id
         translation.activate(user_profile.language)
-        request.session['django_language'] = user_profile.language  # Update here
-        return redirect('index')
+        request.session['django_language'] = user_profile.language
+        return redirect('index')  # Redirect to the home page or any other view
 
     return render(request, 'select_profile.html', {'user_profiles': user_profiles})
+
+
+    
+@login_required
+def switch_profile(request, profile_id):
+    profile = UserProfile.objects.get(id=profile_id)
+    if profile.user == request.user:
+        request.session['selected_profile_id'] = profile.id
+        translation.activate(profile.language)
+        request.session['django_language'] = profile.language
+
+    # Redirect to the profile view to reflect the selected profile
+    return redirect(request.META.get('HTTP_REFERER', 'index'))

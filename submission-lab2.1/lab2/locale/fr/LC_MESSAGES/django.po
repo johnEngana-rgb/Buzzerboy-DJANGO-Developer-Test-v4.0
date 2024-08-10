@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-10 13:11+0800\n"
+"POT-Creation-Date: 2024-08-10 15:40+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,544 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
 #: .\lab2\settings.py:29
 msgid "English"
-msgstr ""
+msgstr "Anglais"
 
 #: .\lab2\settings.py:30
 msgid "French"
+msgstr "Français"
+
+#: .\login\models.py:26
+msgid "Preferred Language"
+msgstr "Langue préférée"
+
+#: .\main\templates\about-us.html:15
+msgid "Appku - Software Landing Page"
+msgstr "Appku - Page de présentation du logiciel"
+
+#: .\main\templates\about-us.html:63
+msgid "About Us"
+msgstr "À propos de nous"
+
+#: .\main\templates\about-us.html:65
+msgid "Home"
+msgstr "Accueil"
+
+#: .\main\templates\about-us.html:66
+msgid "About"
+msgstr "À propos"
+
+#: .\main\templates\about-us.html:79
+msgid " Shape"
+msgstr " Forme"
+
+#: .\main\templates\about-us.html:88 .\main\templates\about-us.html:90
+#: .\main\templates\about-us.html:188 .\main\templates\about-us.html:216
+#: .\main\templates\about-us.html:244
+msgid " Thumb"
+msgstr " Vignette"
+
+#: .\main\templates\about-us.html:94
+msgid "Story about us"
+msgstr "Notre histoire"
+
+#: .\main\templates\about-us.html:95
+msgid "Perfect place to Design, Development, Software."
+msgstr "L'endroit idéal pour la conception, le développement, le logiciel."
+
+#: .\main\templates\about-us.html:98
+msgid "Free Download App"
+msgstr "Téléchargement gratuit de l'application"
+
+#: .\main\templates\about-us.html:99 .\main\templates\about-us.html:108
+#, python-format
+msgid ""
+"\n"
+"                                <p>\n"
+"                                    This is a longer paragraph of text that "
+"needs to be translated into different languages.\n"
+"                                    It contains multiple sentences and "
+"possibly some variables like %(variable_name)s.\n"
+"                                </p>\n"
+"                                "
 msgstr ""
+"\n"
+"                                <p>\n"
+"                                    Ceci est un paragraphe plus long qui "
+"doit être traduit en différentes langues.\n"
+"                                    Il contient plusieurs phrases et "
+"éventuellement des variables comme %(variable_name)s.\n"
+"                                </p>\n"
+"                                "
+
+#: .\main\templates\about-us.html:107
+msgid "Trusted and Reliable"
+msgstr "Fiable et digne de confiance"
+
+#: .\main\templates\about-us.html:117
+msgid "Start free trial"
+msgstr "Commencer l'essai gratuit"
+
+#: .\main\templates\about-us.html:118
+msgid "See all features"
+msgstr "Voir toutes les fonctionnalités"
+
+#: .\main\templates\about-us.html:137
+msgid "Projects Completed"
+msgstr "Projets terminés"
+
+#: .\main\templates\about-us.html:143
+msgid "Active clients"
+msgstr "Clients actifs"
+
+#: .\main\templates\about-us.html:149
+msgid "Cups of coffee"
+msgstr "Tasses de café"
+
+#: .\main\templates\about-us.html:155
+msgid "Happy clients"
+msgstr "Clients satisfaits"
+
+#: .\main\templates\about-us.html:171 .\main\templates\index.html:348
+msgid "Innovative Team"
+msgstr "Équipe innovante"
+
+#: .\main\templates\about-us.html:206 .\main\templates\index.html:384
+msgid "Ahem Natasha"
+msgstr "Ahem Natasha"
+
+#: .\main\templates\about-us.html:207 .\main\templates\index.html:385
+msgid "Operations officer"
+msgstr "Responsable des opérations"
+
+#: .\main\templates\about-us.html:234 .\main\templates\index.html:412
+msgid "Devid Mark"
+msgstr "Devid Mark"
+
+#: .\main\templates\about-us.html:235 .\main\templates\index.html:413
+msgid "Graphic designer"
+msgstr "Graphiste"
+
+#: .\main\templates\about-us.html:262 .\main\templates\index.html:440
+msgid "Brave Hammam"
+msgstr "Brave Hammam"
+
+#: .\main\templates\about-us.html:263 .\main\templates\index.html:441
+msgid "Web developer"
+msgstr "Développeur web"
+
+#: .\main\templates\about-us.html:280
+msgid " dashboard"
+msgstr " tableau de bord"
+
+#: .\main\templates\about-us.html:285
+msgid "Why Choose us"
+msgstr "Pourquoi nous choisir"
+
+#: .\main\templates\about-us.html:286
+msgid "Create your app page With expert developer"
+msgstr "Créez votre page d'application avec des développeurs experts"
+
+#: .\main\templates\about-us.html:295
+msgid "Friendly Interface"
+msgstr "Interface conviviale"
+
+#: .\main\templates\about-us.html:299
+msgid "Strong Encryption"
+msgstr "Chiffrement fort"
+
+#: .\main\templates\about-us.html:303
+msgid "Success Rate"
+msgstr "Taux de réussite"
+
+#: .\main\templates\index.html:66
+msgid "Trending Apps On Play Store"
+msgstr "Applications tendance sur le Play Store"
+
+#: .\main\templates\index.html:67
+msgid "Get Benefit By Using Trending Apps"
+msgstr "Profitez des avantages en utilisant des applications tendance"
+
+#: .\main\templates\index.html:68
+msgid ""
+"\n"
+"                        <p class=\"wow fadeInLeft\" data-wow-"
+"delay=\"500ms\">\n"
+"                            Lasted hunted enough an up seeing in lively "
+"letter. Had judgment out opinions property the supplied.\n"
+"                        </p>\n"
+"                        "
+msgstr ""
+"\n"
+"                        <p class=\"wow fadeInLeft\" data-wow-"
+"delay=\"500ms\">\n"
+"                            Chassé suffisamment longtemps pour voir dans une lettre vivante. Avait jugé les opinions sur les propriétés fournies.\n"
+"                        </p>\n"
+"                        "
+
+#: .\main\templates\index.html:73
+#, fuzzy
+#| msgid "Start free trial"
+msgid "Start a free trial"
+msgstr "Commencer l'essai gratuit"
+
+#: .\main\templates\index.html:77 .\main\templates\index.html:237
+#: .\main\templates\index.html:297 .\main\templates\index.html:307
+#: .\main\templates\index.html:317 .\main\templates\index.html:327
+#: .\main\templates\index.html:366 .\main\templates\index.html:394
+#: .\main\templates\index.html:422 .\main\templates\index.html:681
+#: .\main\templates\index.html:712 .\main\templates\index.html:743
+#, fuzzy
+#| msgid " Thumb"
+msgid "Thumb"
+msgstr " Vignette"
+
+#: .\main\templates\index.html:93
+msgid "We are Better Here is Why"
+msgstr "Nous sommes meilleurs, voici pourquoi"
+
+#: .\main\templates\index.html:95 .\main\templates\index.html:281
+#: .\main\templates\index.html:350 .\main\templates\index.html:461
+#: .\main\templates\index.html:576 .\main\templates\index.html:665
+msgid ""
+"\n"
+"                        <p>\n"
+"                            Outlived no dwelling denoting in peculiar as he "
+"believed. Behaviour excellent middleton be as it curiosity departure "
+"ourselves very extreme future. \n"
+"                        </p>\n"
+"                        "
+msgstr ""
+"\n"
+"                        <p>\n"
+"                            A survécu sans habitation dénotant en particulier comme il le croyait. Comportement excellent, Middleton étant curieux, nous partons pour un avenir très extrême. \n"
+"                        </p>\n"
+"                        "
+
+#: .\main\templates\index.html:110 .\main\templates\index.html:127
+#: .\main\templates\index.html:144
+msgid "Icon"
+msgstr "Icône"
+
+#: .\main\templates\index.html:113
+msgid "Fully Secured"
+msgstr "Entièrement sécurisé"
+
+#: .\main\templates\index.html:114 .\main\templates\index.html:131
+#: .\main\templates\index.html:148
+msgid ""
+"\n"
+"                            <p>\n"
+"                                Everything melancholy uncommonly but "
+"excellence an to impression. Ladies she basket season age her uneasy saw.\n"
+"                            </p>\n"
+"                            "
+msgstr ""
+"\n"
+"                            <p>\n"
+"                                Tout est mélancolie de manière inhabituelle, mais l'excellence à l'impression. Les dames, elle a vu la saison des paniers vieillir de manière mal à l'aise.\n"
+"                            </p>\n"
+"                            "
+
+#: .\main\templates\index.html:130
+msgid "Easy to Edit"
+msgstr "Facile à modifier"
+
+#: .\main\templates\index.html:147
+msgid "Design & Branding"
+msgstr "Conception & Branding"
+
+#: .\main\templates\index.html:170
+msgid "Creative New Apps for IT, Retail, & Banking"
+msgstr "Nouvelles applications créatives pour l'IT, la vente au détail et la banque"
+
+#: .\main\templates\index.html:171
+msgid ""
+"\n"
+"                        <p>\n"
+"                            Lorem ipsum, dolor sit amet consectetur "
+"adipisicing elit. Aliquid nostrum, aut, perspiciatis, iusto animi incidunt "
+"ab recusandae molestiae repellendus distinctio maxime ex architecto vero "
+"fuga iste pariatur alias vitae tempore.\n"
+"                        </p>\n"
+"                        "
+msgstr ""
+"\n"
+"                        <p>\n"
+"                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nostrum, aut, perspiciatis, iusto animi incidunt ab recusandae molestiae repellendus distinctio maxime ex architecto vero fuga iste pariatur alias vitae tempore.\n"
+"                        </p>\n"
+"                        "
+
+#: .\main\templates\index.html:182
+#, fuzzy
+#| msgid "Free Download App"
+msgid "App Downloads"
+msgstr "Téléchargements d'applications"
+
+#: .\main\templates\index.html:189
+msgid "Positive Rating"
+msgstr "Évaluation positive"
+
+#: .\main\templates\index.html:194
+msgid "Watch Promo"
+msgstr "Regarder la promo"
+
+#: .\main\templates\index.html:210
+msgid "Management"
+msgstr "Gestion"
+
+#: .\main\templates\index.html:211 .\main\templates\index.html:244
+msgid ""
+"\n"
+"                        <p>\n"
+"                            Attention are had allowance own perceived "
+"abilities. Unfeeling are had allowance own perceived abilities.\n"
+"                        </p>\n"
+"                        "
+msgstr ""
+"\n"
+"                        <p>\n"
+"                            L'attention est portée sur les capacités perçues. Insensibilité face à ses propres capacités perçues.\n"
+"                        </p>\n"
+"                        "
+
+#: .\main\templates\index.html:218 .\main\templates\index.html:251
+msgid "Time Tracking"
+msgstr "Suivi du temps"
+
+#: .\main\templates\index.html:219 .\main\templates\index.html:260
+msgid ""
+"\n"
+"                        <p>\n"
+"                            Business are had allowance own perceived "
+"abilities. Unfeeling are had allowance own perceived abilities.\n"
+"                        </p>\n"
+"                        "
+msgstr ""
+"\n"
+"                        <p>\n"
+"                            Les affaires bénéficient de capacités perçues. Insensibilité face à ses propres capacités perçues.\n"
+"                        </p>\n"
+"                        "
+
+#: .\main\templates\index.html:226
+msgid "Payment"
+msgstr "Paiement"
+
+#: .\main\templates\index.html:227 .\main\templates\index.html:252
+msgid ""
+"\n"
+"                        <p>\n"
+"                            Providing are had allowance own perceived "
+"abilities. Unfeeling are had allowance own perceived abilities.\n"
+"                        </p>\n"
+"                        "
+msgstr ""
+"\n"
+"                        <p>\n"
+"                            Les capacités perçues sont accordées. Insensibilité face à ses propres capacités perçues.\n"
+"                        </p>\n"
+"                        "
+
+#: .\main\templates\index.html:243
+msgid "Productivity"
+msgstr "Productivité"
+
+#: .\main\templates\index.html:259 .\main\templates\index.html:601
+#: .\main\templates\index.html:622 .\main\templates\index.html:644
+msgid "Live Support"
+msgstr "Support en direct"
+
+#: .\main\templates\index.html:279
+msgid "App Screenshot"
+msgstr "Capture d'écran de l'application"
+
+#: .\main\templates\index.html:459
+msgid "What people say"
+msgstr "Ce que disent les gens"
+
+#: .\main\templates\index.html:478 .\main\templates\index.html:506
+#: .\main\templates\index.html:534
+msgid "Author"
+msgstr "Auteur"
+
+#: .\main\templates\index.html:480
+msgid "Devid Warner"
+msgstr "Devid Warner"
+
+#: .\main\templates\index.html:481
+msgid "Managing Director"
+msgstr "Directeur général"
+
+#: .\main\templates\index.html:485 .\main\templates\index.html:513
+#: .\main\templates\index.html:541
+msgid ""
+"\n"
+"                                    <p>\n"
+"                                        Otherwise concealed favourite "
+"frankness on be at dashwoods mentions defective at. Sympathize interested "
+"simplicity at do projecting care effect increasing terminated. As edward "
+"settle limits at in. Chamber reaching abnormally nothing be accessing to the "
+"point. very extreme future.\n"
+"                                    </p>\n"
+"                                    "
+msgstr ""
+"\n"
+"                                    <p>\n"
+"                                        Sinon, la franchise préférée cachée à être mentionnée chez Dashwoods défectueuse. Sympathiser intéressé par la simplicité en projetant un effet de soin croissant terminé. Alors qu'Edward fixe des limites. Chambre atteignant anormalement rien d'accéder à ce point. très futur extrême.\n"
+"                                    </p>\n"
+"                                    "
+
+#: .\main\templates\index.html:492
+msgid "Design Quality"
+msgstr "Qualité de conception"
+
+#: .\main\templates\index.html:508
+msgid "Pruasuj Natasha"
+msgstr "Pruasuj Natasha"
+
+#: .\main\templates\index.html:509
+msgid "Theme Developer"
+msgstr "Développeur de thèmes"
+
+#: .\main\templates\index.html:520
+msgid "Customer Support"
+msgstr "Support client"
+
+#: .\main\templates\index.html:536
+msgid "Koyel Anderson"
+msgstr "Koyel Anderson"
+
+#: .\main\templates\index.html:537
+msgid "Project Manager"
+msgstr "Chef de projet"
+
+#: .\main\templates\index.html:548
+msgid "User Friendly"
+msgstr "Convivial"
+
+#: .\main\templates\index.html:574
+msgid "Our Packages"
+msgstr "Nos forfaits"
+
+#: .\main\templates\index.html:593
+msgid "Free trial"
+msgstr "Essai gratuit"
+
+#: .\main\templates\index.html:596 .\main\templates\index.html:616
+#: .\main\templates\index.html:637
+msgid "/ Monthly"
+msgstr "/ Mensuel"
+
+#: .\main\templates\index.html:599 .\main\templates\index.html:619
+#: .\main\templates\index.html:640
+msgid "Demo file"
+msgstr "Fichier de démonstration"
+
+#: .\main\templates\index.html:600 .\main\templates\index.html:620
+#: .\main\templates\index.html:641
+msgid "10 GB Dedicated Hosting free"
+msgstr "Hébergement dédié de 10 Go gratuit"
+
+#: .\main\templates\index.html:603 .\main\templates\index.html:624
+#: .\main\templates\index.html:646
+msgid "Purchase Plan"
+msgstr "Acheter un forfait"
+
+#: .\main\templates\index.html:613
+msgid "Regular"
+msgstr "Régulier"
+
+#: .\main\templates\index.html:621 .\main\templates\index.html:642
+msgid "Lifetime free Support"
+msgstr "Support gratuit à vie"
+
+#: .\main\templates\index.html:634
+msgid "Extended"
+msgstr "Étendu"
+
+#: .\main\templates\index.html:643
+msgid "SEO Optimized"
+msgstr "Optimisé pour le référencement"
+
+#: .\main\templates\index.html:663
+msgid "Latest News"
+msgstr "Dernières nouvelles"
+
+#: .\main\templates\index.html:682
+msgid "Apr"
+msgstr "Avr"
+
+#: .\main\templates\index.html:688 .\main\templates\index.html:750
+msgid "User"
+msgstr "Utilisateur"
+
+#: .\main\templates\index.html:691
+msgid "26 Comments"
+msgstr "26 Commentaires"
+
+#: .\main\templates\index.html:696
+msgid "Discovery earnestly public commanded mentions."
+msgstr "La découverte commande sérieusement des mentions publiques."
+
+#: .\main\templates\index.html:698 .\main\templates\index.html:729
+#: .\main\templates\index.html:760
+msgid ""
+"\n"
+"                            <p>\n"
+"                                Possession ye no mr unaffected remarkably "
+"at. Wrote house in never fruit up. Pasture imagine my garrets.  \n"
+"                            </p>\n"
+"                            "
+msgstr ""
+"\n"
+"                            <p>\n"
+"                                Possession, vous n'êtes pas remarquablement affecté, monsieur. A écrit la maison sans jamais porter de fruit. Imaginez mes mansardes.\n"
+"                            </p>\n"
+"                            "
+
+#: .\main\templates\index.html:713
+msgid "Aug"
+msgstr "Août"
+
+#: .\main\templates\index.html:719
+msgid "Admin"
+msgstr "Admin"
+
+#: .\main\templates\index.html:722
+msgid "35 Comments"
+msgstr "35 Commentaires"
+
+#: .\main\templates\index.html:727
+msgid "Considered imprudence of he friendship boisterous."
+msgstr "Considéré comme une imprudence de son amitié tapageuse."
+
+#: .\main\templates\index.html:744
+msgid "Jul"
+msgstr "Juil"
+
+#: .\main\templates\index.html:753
+msgid "12 Comments"
+msgstr "12 Commentaires"
+
+#: .\main\templates\index.html:758
+msgid "Overcame breeding or my concerns removing desirous."
+msgstr "Surmonté l'élevage ou mes préoccupations supprimant le désir."
+
+#: .\main\templates\index.html:782 .\main\templates\index.html:786
+msgid "Free Trial"
+msgstr "Essai gratuit"
+
+#: .\main\templates\index.html:783
+msgid "Start Your 14 Days Free Trials Today!"
+msgstr "Commencez vos 14 jours d'essai gratuit aujourd'hui !"
+
+#: .\main\templates\index.html:785
+msgid "Your Email"
+msgstr "Votre email"
+
+#: .\main\templates\index.html:792
+msgid "Illustration"
+msgstr "Illustration"
