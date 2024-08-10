@@ -1,0 +1,542 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Appku - Software Landing Page">
+    {% load static %}
+    <!-- ========== Page Title ========== -->
+    <title>Appku - Software Landing Page</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/themify-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/elegant-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/flaticon-set.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.carousel.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/validnavs.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/helper.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/shop.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="{% static 'assets/js/html5/html5shiv.min.js' %}"></script>
+      <script src="{% static 'assets/js/html5/respond.min.js' %}"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Header 
+    ============================================= -->
+    {% block content %}
+    <!-- End Header -->
+
+     <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark bg-cover text-center text-light" style="background-image: url(assets/img/2440x1578.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <h1>Shop Single</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li>Shop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Shop 
+    ============================================= -->
+    <div class="validtheme-shop-single-area default-padding">
+        <div class="container">
+            <div class="product-details">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="product-thumb">
+                            <div class="item-box">
+                                <div class="product-item">
+                                    <a href="{% static 'assets/img/product/1.png' %}" class="item popup-gallery">
+                                        <img src="{% static 'assets/img/product/1.png' %}" alt="Thumb">
+                                    </a>
+                                    <span class="onsale theme">-16%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="single-product-contents">
+                            <div class="summary-top-box">
+                                <div class="tags">
+                                    <a href="#">Laptop Mouse</a>
+                                </div>
+                                <div class="review-count">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span>(8 Review)</span>
+                                </div>
+                            </div>
+                            <h2 class="product-title">
+                                Face & Body Foundation
+                            </h2>
+                            <div class="price">
+                                <span><del>$8.00</del></span>
+                                <span>$5.00</span>
+                            </div>
+                            <div class="product-stock in-stock">
+                                <span>In Stock</span>
+                            </div>
+                            <p>
+                                The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. Thanks to its powerful components, the laptop can handle resource-intensive tasks perfectly and is also suitable for most games. non-characteristic words etc. Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder
+                            </p>
+                            <div class="product-purchase-list">
+                                <input type="number" id="quantity" step="1" size="5" name="quantity" min="0" placeholder="0">
+                                <a href="#" class="btn">
+                                    <i class="ti-shopping-cart"></i>
+                                    <span>Add to cart</span>
+                                </a>
+                                <div class="shop-action">
+                                    <ul>
+                                        <li class="wishlist">
+                                            <a href="#"><span>Add to wishlist</span></a>
+                                        </li>
+                                        <li class="compare">
+                                            <a href="#"><span>Compare</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-estimate-delivary">
+                                <i class="fas fa-box-open"></i>
+                                <strong> 2-day Delivery</strong>
+                                <span>Speedy and reliable parcel delivery!</span>
+                            </div>
+                            <div class="product-meta">
+                                <span class="sku">
+                                    <strong>SKU:</strong> BE45VGRT
+                                </span>
+                                <span class="posted-in">
+                                    <strong>Category:</strong>
+                                    <a href="#">Computer</a> ,
+                                    <a href="#">Speaker</a>, 
+                                    <a href="#">Headphone</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Bottom Info  -->
+            <div class="single-product-bottom-info">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Tab Nav -->
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="description-tab-control" data-bs-toggle="tab" data-bs-target="#description-tab" type="button" role="tab" aria-controls="description-tab" aria-selected="true">
+                                Description
+                            </button>
+
+                            <button class="nav-link" id="specification-tab-control" data-bs-toggle="tab" data-bs-target="#specification-tab" type="button" role="tab" aria-controls="specification-tab" aria-selected="false">
+                                Specification
+                            </button>
+
+                            <button class="nav-link" id="information-tab-control" data-bs-toggle="tab" data-bs-target="#information-tab" type="button" role="tab" aria-controls="information-tab" aria-selected="false">
+                                Additional Information
+                            </button>
+
+                            <button class="nav-link" id="review-tab-control" data-bs-toggle="tab" data-bs-target="#review-tab" type="button" role="tab" aria-controls="review-tab" aria-selected="false">
+                                Review
+                            </button>
+
+                        </div>
+                        <!-- End Tab Nav -->
+                        <!-- Start Tab Content -->
+                        <div class="tab-content tab-content-info" id="myTabContent">
+
+                            <!-- Tab Single -->
+                            <div class="tab-pane fade show active" id="description-tab" role="tabpanel" aria-labelledby="description-tab-control">
+                                <p>
+                                    The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. Thanks to its powerful components, the laptop can handle resource-intensive tasks perfectly and is also suitable for most games.
+                                </p>
+                                <ul> 
+                                    <li>slim body with metal cover</li> 
+                                    <li>latest Intel Core i5-1135G7 processor (4 cores / 8 threads)</li> <li>8GB DDR4 RAM and fast 512GB PCIe SSD</li> 
+                                    <li>NVIDIA GeForce MX350 2GB GDDR5 graphics card</li> 
+                                    <li>backlit keyboard, touchpad with gesture support</li> 
+                                </ul>
+                            </div>
+                            <!-- End Single -->
+
+                            <!-- Tab Single -->
+                            <div class="tab-pane fade" id="specification-tab" role="tabpanel" aria-labelledby="specification-tab-control">
+                                <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>Alternate names</td>
+                                        <td>iPad 5</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Brand</td>
+                                        <td>Apple</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Model</td>
+                                        <td>iPad Air Wi-Fi + Cellular</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Release date</td>
+                                        <td>September 2021</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Dimensions (mm)</td>
+                                        <td>240.00 x 169.50 x 7.50</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Tab Single -->
+
+                            <!-- Tab Single -->
+                            <div class="tab-pane fade" id="information-tab" role="tabpanel" aria-labelledby="information-tab-control">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                          <tr>
+                                            <td>Color</td>
+                                            <td>Black, Blue, Green</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Brand</td>
+                                            <td>Apple, Samsun</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- End Tab Single -->
+
+                            <!-- Tab Single -->
+                            <div class="tab-pane fade" id="review-tab" role="tabpanel" aria-labelledby="review-tab-control">
+                                <h4>1 review for Apple iPhone 11 64GB Yellow Fully Unlocked</h4>
+                                <div class="review-items">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/img/100x100.png' %}" alt="Thumb">
+                                        </div>
+                                        <div class="info">
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <div class="review-date">April 8, 2021</div>
+                                            <div class="review-authro"><h5>Furion</h5></div>
+                                            <p>
+                                                Designed for simplicity and made from high quality materials. Its sleek geometry and material combinations creates a modern look.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/img/100x100.png' %}" alt="Thumb">
+                                        </div>
+                                        <div class="info">
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <div class="review-date">April 8, 2021</div>
+                                            <div class="review-authro"><h5>Furion</h5></div>
+                                            <p>
+                                                Designed for simplicity and made from high quality materials. Its sleek geometry and material combinations creates a modern look.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-form">
+                                    <h4>Add a review</h4>
+                                    <div class="rating-select">
+                                        <div class="stars">
+                                            <span>
+                                                <a class="star-1" href="#"><i class="fas fa-star"></i></a>
+                                                <a class="star-2" href="#"><i class="fas fa-star"></i></a>
+                                                <a class="star-3" href="#"><i class="fas fa-star"></i></a>
+                                                <a class="star-4" href="#"><i class="fas fa-star"></i></a>
+                                                <a class="star-5" href="#"><i class="fas fa-star"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <form action="#" class="contact-form">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group comments">
+                                                    <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                                    <span class="alert-error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                                    <span class="alert-error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <button type="submit" name="submit" id="submit">
+                                                    Post Review
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Alert Message -->
+                                        <div class="col-md-12 alert-notification">
+                                            <div id="message" class="alert-msg"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- End Tab Single -->
+
+                        </div>
+                        <!-- End Tab Content -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Product Bottom Info  -->
+
+            <!-- Related Product  -->
+            <div class="related-products carousel-shadow">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Related Products</h3>
+                        <ul class="vt-products related-product-carousel owl-carousel owl-theme">
+                            <!-- Single product -->
+                            <li class="product">
+                                <div class="product-contents">
+                                    <div class="product-image">
+                                        <span class="onsale">Sale!</span>
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/product/3.png' %}" alt="Product">
+                                        </a>
+                                        <div class="shop-action">
+                                            <ul>
+                                                <li class="wishlist">
+                                                    <a href="#"><span>Add to wishlist</span></a>
+                                                </li>
+                                                <li class="compare">
+                                                    <a href="#"><span>Compare</span></a>
+                                                </li>
+                                                <li class="quick-view">
+                                                    <a href="#"><span>Quick view</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="tags">
+                                            <a href="#">Laptop Mouse</a>
+                                        </div>
+                                        <h4 class="product-title">
+                                            <a href="#">Face & Body Foundation</a>
+                                        </h4>
+                                        <div class="review-count">
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <span>8 Review</span>
+                                        </div>
+                                        <div class="price">
+                                            <span><del>$8.00</del></span>
+                                            <span>$5.00</span>
+                                        </div>
+                                        <a href="#" class="btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>Add to cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Single product -->
+                            <!-- Single product -->
+                            <li class="product">
+                                <div class="product-contents">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/product/2.png' %}" alt="Product">
+                                        </a>
+                                        <div class="shop-action">
+                                            <ul>
+                                                <li class="wishlist">
+                                                    <a href="#"><span>Add to wishlist</span></a>
+                                                </li>
+                                                <li class="compare">
+                                                    <a href="#"><span>Compare</span></a>
+                                                </li>
+                                                <li class="quick-view">
+                                                    <a href="#"><span>Quick view</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="tags">
+                                            <a href="#">Laptop Mouse</a>
+                                        </div>
+                                        <h4 class="product-title">
+                                            <a href="#">Face & Body Foundation</a>
+                                        </h4>
+                                        <div class="review-count">
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <span>8 Review</span>
+                                        </div>
+                                        <div class="price">
+                                            <span><del>$8.00</del></span>
+                                            <span>$5.00</span>
+                                        </div>
+                                        <a href="#" class="btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>Add to cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Single product -->
+                            <!-- Single product -->
+                            <li class="product">
+                                <div class="product-contents">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img src="{% static 'assets/img/product/4.png' %}" alt="Product">
+                                        </a>
+                                        <div class="shop-action">
+                                            <ul>
+                                                <li class="wishlist">
+                                                    <a href="#"><span>Add to wishlist</span></a>
+                                                </li>
+                                                <li class="compare">
+                                                    <a href="#"><span>Compare</span></a>
+                                                </li>
+                                                <li class="quick-view">
+                                                    <a href="#"><span>Quick view</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <div class="tags">
+                                            <a href="#">Laptop Mouse</a>
+                                        </div>
+                                        <h4 class="product-title">
+                                            <a href="#">Face & Body Foundation</a>
+                                        </h4>
+                                        <div class="review-count">
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <span>8 Review</span>
+                                        </div>
+                                        <div class="price">
+                                            <span><del>$8.00</del></span>
+                                            <span>$5.00</span>
+                                        </div>
+                                        <a href="#" class="btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>Add to cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Single product -->
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Related Product  -->
+        </div>
+    </div>
+    <!-- End Shop -->
+{% endblock %}
+
+<!-- jQuery Frameworks
+    ============================================= -->
+<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+<script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/modernizr.custom.13711.js' %}"></script>
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+<script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/count-to.js' %}"></script>
+<script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+<script src="{% static 'assets/js/validnavs.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

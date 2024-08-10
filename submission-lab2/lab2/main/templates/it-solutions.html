@@ -1,0 +1,712 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Appku - Software Landing Page">
+    {% load static %}
+    <!-- ========== Page Title ========== -->
+    <title>Appku - Software Landing Page</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/themify-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/elegant-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/flaticon-set.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.carousel.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/validnavs.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/helper.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/shop.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="{% static 'assets/js/html5/html5shiv.min.js' %}"></script>
+      <script src="{% static 'assets/js/html5/respond.min.js' %}"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Header 
+    ============================================= -->
+    {% block content %}
+    <!-- End Header -->
+
+   <!-- Start Banner 
+    ============================================= -->
+    <div class="it-banner text-light bg-cover" style="background-image: url(assets/img/shape/5.jpg);">
+        <div class="container">
+            <div class="double-items">
+                <div class="row align-center">
+
+                    <div class="col-lg-6 info">
+                        <h2>Creating a better <strong>Technology</strong></h2>
+                        <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube video-btn"><i class="fas fa-play"></i>Our Process</a>
+                    </div>
+
+                     <div class="col-lg-6 it-banner-thumb">
+                        <img src="{% static 'assets/img/illustration/29.png' %}" alt="Thumb">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start About
+    ============================================= -->
+    <div class="about-style-six-area overflow-hidden default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7">
+                    <div class="about-six-thumb">
+                        <img src="{% static 'assets/img/800x1000.png' %}" alt="Image not found">
+                        <img src="{% static 'assets/img/800x700.png' %}" alt="Image not found">
+                        <ul class="about-list">
+                            <li>
+                                <div class="experience">
+                                    <h1>38</h1>
+                                    <h4>Years of experience</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Certified Company</h4>
+                                <p>
+                                    Again keeps at no meant stuff perpetual do northward cultural difficult preserved daughters.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 offset-xl-1 mt-80 mt-xs-30">
+                    <div class="about-style-six">
+                        <h2>Perfect it solutions for any startups</h2>
+                        <p>
+                            Numerous ladyship so raillery humoured goodness received an. So narrow formal length my highly longer afford oh. Tall neat he make or at dull ye. Lorem ipsum dolor,  Autem dolore repellat, omnis quam? Quasi sint laudantium repellendus unde a totam perferendis.
+                        </p>
+                        <a class="btn mt-10 circle btn-theme-effect btn-sm" href="#">Company Story</a>
+                        <div class="about-card">
+                            <img src="{% static 'assets/img/icon/4.png' %}" alt="Image Not Found">
+                            <div class="info">
+                                <h4>Best IT Agency And Solutions Since 1978. </h4>
+                                <p>
+                                    Continue indulged speaking horrible for domestic position. Seeing rather her you not esteem men settle.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Services
+    ============================================= -->
+    <div class="services-style-six-area default-padding bottom-less bg-dark text-light" style="background-image: url(assets/img/shape/48.png);">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="title-sub">What we do</h4>
+                        <h2 class="title-regular">We believe that technology can change the world</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- Single Item -->
+                <div class="col-xl-4 col-md-6 mb-30">
+                    <div class="services-style-six">
+                        <div class="info">
+                            <img src="{% static 'assets/img/icon/1.png' %}" alt="Image Not Found">
+                            <h4><a href="#">IT Consultancy</a></h4>
+                            <p>
+                                Wanted easily in called formed suff. Hooped sense as taken ye mirth. Believe fat how six drawing actual men drawing minutes far. Same do seen head am part it dear open to whatever we accept.
+                            </p>
+                            <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="col-xl-4 col-md-6 mb-30">
+                    <div class="services-style-six">
+                        <div class="info">
+                            <img src="{% static 'assets/img/icon/2.png' %}" alt="Image Not Found">
+                            <h4><a href="#">Cyber Security</a></h4>
+                            <p>
+                                Wanted easily in called formed suff. Hooped sense as taken ye mirth. Believe fat how six drawing actual men drawing minutes far. Same do seen head am part it dear open to whatever we accept.
+                            </p>
+                            <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="col-xl-4 col-md-6 mb-30">
+                    <div class="services-style-six">
+                        <div class="info">
+                            <img src="{% static 'assets/img/icon/3.png' %}" alt="Image Not Found">
+                            <h4><a href="#">Backup & Recovery</a></h4>
+                            <p>
+                                Wanted easily in called formed suff. Hooped sense as taken ye mirth. Believe fat how six drawing actual men drawing minutes far. Same do seen head am part it dear open to whatever we accept.
+                            </p>
+                            <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- Start Choose Us 
+    ============================================= -->
+    <div class="choose-us-style-two-area default-padding">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6">
+                    <div class="choose-us-thumb">
+                        <img src="{% static 'assets/img/800x800.png' %}" alt="Image Not Found">
+                        <div class="fun-fact">
+                            <div class="counter">
+                                <div class="timer" data-to="50" data-speed="2000">50</div>
+                                <div class="operator">K</div>
+                            </div>
+                            <span class="medium">Complete Project </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="choose-us-style-two">
+                        <h2>Unlock The Potential Of Your Creative Business.</h2>
+                        <p>
+                            Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably.
+                        </p>
+                        <ul>
+                            <li>
+                                <h4>Research & Discovery</h4>
+                                <p>
+                                    Surrounded sir motionless she end literature. Gay direction neglected but supported yet her.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Industry Expertise</h4>
+                            </li>
+                            <li>
+                                <h4>Quality Assurance</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Choose Us -->
+
+    
+
+    <!-- Start Testimonials 
+    ============================================= -->
+    <div class="testimonial-style-two-area bg-gradient text-light default-padding">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="title-sub">Testimonials</h4>
+                        <h2 class="title-regular"> What people say about <br> our creative service	</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="tesimonial-style-two-carousel owl-carousel owl-theme">
+                        <!-- Single Item -->
+                        <div class="item">
+                            <div class="provider">
+                                <img src="{% static 'assets/img/800x800.png' %}" alt="Author">
+                            </div>
+                            <div class="info">
+                                <svg xmlns="http://www.w3.org/2000/svg">
+                                    <path class="cls-1" d="M761,4387h1v76.34l-20,24.11,20,26.24V4677h-1V4513.68l-20-26.16,20-24.1V4387Z" transform="translate(-741 -4387)"></path>
+                                </svg>
+                                <div class="reason">
+                                    <h5>Design Quality</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>
+                                    Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future. 
+                                </p>
+                                <div class="content">
+                                    <img src="{% static 'assets/img/shape/quote-big.png' %}" alt="Image not Found">
+                                    <div class="right">
+                                        <h4>Devid Warner</h4>
+                                        <span> Managing Director</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="item">
+                            <div class="provider">
+                                <img src="{% static 'assets/img/800x800.png' %}" alt="Author">
+                            </div>
+                            <div class="info">
+                                <svg xmlns="http://www.w3.org/2000/svg">
+                                    <path class="cls-1" d="M761,4387h1v76.34l-20,24.11,20,26.24V4677h-1V4513.68l-20-26.16,20-24.1V4387Z" transform="translate(-741 -4387)"></path>
+                                </svg>
+                                <div class="reason">
+                                    <h5>Customer Support</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>
+                                    Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future.  
+                                </p>
+                                <div class="content">
+                                    <img src="{% static 'assets/img/shape/quote-big.png' %}" alt="Image not Found">
+                                    <div class="right">
+                                        <h4>Pruasuj Natasha</h4>
+                                        <span> Theme Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="item">
+                            <div class="provider">
+                                <img src="{% static 'assets/img/800x800.png' %}" alt="Author">
+                            </div>
+                            <div class="info">
+                                <svg xmlns="http://www.w3.org/2000/svg">
+                                    <path class="cls-1" d="M761,4387h1v76.34l-20,24.11,20,26.24V4677h-1V4513.68l-20-26.16,20-24.1V4387Z" transform="translate(-741 -4387)"></path>
+                                </svg>
+                                <div class="reason">
+                                    <h5>User Friendly</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>
+                                    Otherwise concealed favourite frankness on be at dashwoods mentions defective at. Sympathize interested simplicity at do projecting care effect increasing terminated. As edward settle limits at in. Chamber reaching abnormally nothing be accesing to the point. very extreme future.  
+                                </p>
+                                <div class="content">
+                                    <img src="{% static 'assets/img/shape/quote-big.png' %}" alt="Image not Found">
+                                    <div class="right">
+                                        <h4>Koyel Anderson</h4>
+                                        <span> Project Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Start Gallery
+    ============================================= -->
+    <div class="gallery-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="title-sub">Case Studies</h4>
+                        <h2 class="title-regular"> Latest showcase and <br> solutions to our customers!	</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 gallery-content">
+                    <div class="magnific-mix-gallery masonary">
+                        <div id="portfolio-grid" class="gallery-items colums-3">
+                            <!-- Single Item -->
+                            <div class="pf-item">
+                                <div class="overlay">
+                                    <img src="{% static 'assets/img/800x600.png' %}" alt="thumb">
+                                    <div class="content">
+                                        <div class="title">
+                                            <span>Components</span>
+                                            <h5><a href="#">UI design</a></h5>
+                                        </div>
+                                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="pf-item">
+                                <div class="overlay">
+                                    <img src="{% static 'assets/img/800x900.png' %}" alt="thumb">
+                                    <div class="content">
+                                        <div class="title">
+                                            <span>Creative</span>
+                                            <h5><a href="#">Gaming Apps</a></h5>
+                                        </div>
+                                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="pf-item">
+                                <div class="overlay">
+                                    <img src="{% static 'assets/img/800x600.png' %}" alt="thumb">
+                                    <div class="content">
+                                        <div class="title">
+                                            <span>Business</span>
+                                            <h5><a href="#">Business Apps</a></h5>
+                                        </div>
+                                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="pf-item">
+                                <div class="overlay">
+                                    <img src="{% static 'assets/img/800x900.png' %}" alt="thumb">
+                                    <div class="content">
+                                        <div class="title">
+                                            <span>Invest</span>
+                                            <h5><a href="#">Travel Apps</a></h5>
+                                        </div>
+                                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="pf-item">
+                                <div class="overlay">
+                                    <img src="{% static 'assets/img/800x900.png' %}" alt="thumb">
+                                    <div class="content">
+                                        <div class="title">
+                                            <span>Finance</span>
+                                            <h5><a href="#">Entertainment Apps</a></h5>
+                                        </div>
+                                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="pf-item">
+                                <div class="overlay">
+                                    <img src="{% static 'assets/img/800x600.png' %}" alt="thumb">
+                                    <div class="content">
+                                        <div class="title">
+                                            <span>Source</span>
+                                            <h5><a href="#">Lifestyle Apps</a></h5>
+                                        </div>
+                                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery -->
+
+
+    <!-- Start Pricing 
+    ============================================= -->
+    <div id="pricing" class="pricing-area bg-gray default-padding bottom-less">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="title-sub">Our Packages</h4>
+                        <h2 class="title-regular"> Committed the lowest price</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="pricing-style-two-box">
+                <div class="row">
+                    <!-- Single Itme -->
+                    <div class="col-lg-4 col-md-6 single-item pricing-style-two">
+                        <div class="pricing-item">
+                            <i class="fas fa-rocket"></i>
+                            <div class="pricing-header">
+                                <h4>Free trial</h4>
+                            </div>
+                            <div class="price">
+                                <h2><sup>$</sup>0 <sub>/ Monthly</sub></h2>
+                            </div>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Demo file</li>
+                                <li><i class="fas fa-check"></i> 10 GB Dedicated Hosting free</li>
+                                <li><i class="fas fa-times"></i> Live Support</li>
+                            </ul>
+                            <a class="btn circle btn-gray btn-sm" href="#">Purchase Plan</a>
+                        </div>
+                    </div>
+                    <!-- End Single Itme -->
+
+                    <!-- Single Itme -->
+                    <div class="col-lg-4 col-md-6 single-item active pricing-style-two">
+                        <div class="pricing-item">
+                            <i class="fas fa-gem"></i>
+                            <div class="pricing-header">
+                                <h4>Regular</h4>
+                            </div>
+                            <div class="price">
+                                <h2><sup>$</sup>29 <sub>/ Monthly</sub></h2>
+                            </div>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Demo file</li>
+                                <li><i class="fas fa-check"></i> 10 GB Dedicated Hosting free</li>
+                                <li><i class="fas fa-check"></i> Lifetime free Support</li>
+                                <li><i class="fas fa-times"></i> Live Support</li>
+                            </ul>
+                            <a class="btn circle btn-theme-effect btn-sm" href="#">Purchase Plan</a>
+                        </div>
+                    </div>
+                    <!-- End Single Itme -->
+
+                    <!-- Single Itme -->
+                    <div class="col-lg-4 col-md-6 single-item pricing-style-two">
+                        <div class="pricing-item">
+                            <i class="fa fa-chart-pie"></i>
+                            <div class="pricing-header">
+                                <h4>Extended</h4>
+                            </div>
+                            <div class="price">
+                                <h2><sup>$</sup>59 <sub>/ Monthly</sub></h2>
+                            </div>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Demo file</li>
+                                <li><i class="fas fa-check"></i> 10 GB Dedicated Hosting free</li>
+                                <li><i class="fas fa-check"></i> Lifetime free Support</li>
+                                <li><i class="fas fa-check"></i> SEO Optimized</li>
+                                <li><i class="fas fa-check"></i> Live Support</li>
+                            </ul>
+                            <a class="btn circle btn-gray btn-sm" href="#">Purchase Plan</a>
+                        </div>
+                    </div>
+                    <!-- End Single Itme -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Pricing Area -->
+
+
+    <!-- Start Blog 
+    ============================================= -->
+    <div id="blog" class="blog-area default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="title-sub">Latest News</h4>
+                        <h2 class="title-regular"> Latest News & Articles	</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <!-- Single item -->
+                <div class="single-item col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
+                            <div class="date"><strong>18</strong> <span>Apr</span></div>
+                        </div>
+                        <div class="info">
+                            <div class="meta">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fas fa-user-circle"></i> User</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <a href="blog-single-with-sidebar.html">Discovery earnestly public commanded mentions.</a>
+                            </h4>
+                            <p>
+                                Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single item -->
+
+                <!-- Single item -->
+                <div class="single-item col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
+                            <div class="date"><strong>25</strong> <span>Aug</span></div>
+                        </div>
+                        <div class="info">
+                            <div class="meta">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fas fa-user-circle"></i> Admin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-comments"></i> 35 Comments</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <a href="blog-single-with-sidebar.html">Considered imprudence of he friendship boisterous.</a>
+                            </h4>
+                            <p>
+                                Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single item -->
+
+                <!-- Single item -->
+                <div class="single-item col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="blog-single-with-sidebar.html"><img src="{% static 'assets/img/800x600.png' %}" alt="Thumb"></a>
+                            <div class="date"><strong>05</strong> <span>Jul</span></div>
+                        </div>
+                        <div class="info">
+                            <div class="meta">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fas fa-user-circle"></i> user</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-comments"></i> 12 Comments</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>
+                                <a href="blog-single-with-sidebar.html">Overcame breeding or my concerns removing desirous.</a>
+                            </h4>
+                            <p>
+                                Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single item -->
+
+            </div>
+        </div>
+    </div>
+    <!-- End Blog -->
+
+    <!-- Start Free Trial 
+    ============================================= -->
+    <div class="free-trial-area text-light text-center default-padding-bottom">
+        <div class="container">
+           <div class="trial-box" style="background-image: url(assets/img/shape/8.png);">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <h5>Free Trial</h5>
+                        <h2>Start Your 14 Days Free <br> Trials Today!</h2>
+                        <form action="#">
+                            <input type="email" placeholder="Your Email" class="form-control" name="email">
+                            <button type="submit"> Free Trial</button>  
+                        </form>
+                    </div>
+                </div>
+                <div class="illustration">
+                    <img src="{% static 'assets/img/illustration/1.png' %}" alt="illustration">
+                </div>
+           </div>
+        </div>
+    </div>
+    <!-- End Free Trial -->
+{% endblock %}
+
+<!-- jQuery Frameworks
+    ============================================= -->
+<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+<script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/modernizr.custom.13711.js' %}"></script>
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+<script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/count-to.js' %}"></script>
+<script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+<script src="{% static 'assets/js/validnavs.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
