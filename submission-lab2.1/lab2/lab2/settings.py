@@ -39,7 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'login',
 ]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'login.auth_backends.EmailBackend',  # Replace 'yourapp' with the actual app name
+]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -52,11 +59,15 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'lab2.urls'
+LOGIN_URL = '/login/'  # The URL pattern name you've set for login
+LOGIN_REDIRECT_URL = '/' 
+
+APPEND_SLASH = False
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
