@@ -23,12 +23,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-plq7-(+lv((iz!ldit)x#mcp!we*v7d6@$jeq&f=0#d2vfszuk'
 
+from django.utils.translation import gettext_lazy as _
+
+LANGUAGES = [
+    ('en', _('English')),
+    ('fr', _('French')),  # Example: You can replace 'fr' with 'es' for Spanish or 'it' for Italian.
+]
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 # Application definition
 
 INSTALLED_APPS = [

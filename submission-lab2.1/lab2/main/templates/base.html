@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load i18n %}
 
 <head>
     <!-- ========== Meta Tags ========== -->
@@ -162,13 +163,26 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="{% url 'profile' %}">Profile</a></li>
-                            <li><a href="{% url 'change_password' %}">Chaneg Password</a></li>
-                            <li><form id="logout-form" action="{% url 'logout' %}" method="post" style="display: none;">
-                                {% csrf_token %}
-                                <button type="submit">Logout</button>
-                            </form>
-                            <li><a href="#" onclick="document.getElementById('logout-form').submit();">Logout</a></li>
-                    
+                            <li><a href="{% url 'change_password' %}">Change Password</a></li>
+                            <li>
+                                <form id="logout-form" action="{% url 'logout' %}" method="post" style="display: none;">
+                                    {% csrf_token %}
+                                    <button type="submit">Logout</button>
+                                </form>
+                                <a href="#" onclick="document.getElementById('logout-form').submit();">Logout</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Switch Profile</a>
+                                <ul class="dropdown-menu">
+                                    {% for profile in user.userprofile_set.all %}
+                                    <li>
+                                        <a href="{% url 'switch_profile' profile.id %}">
+                                            {{ profile.company.name }} - {{ profile.language }}
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     {% else %}
@@ -180,8 +194,7 @@
             <div class="attr-right">
                 <!-- Start Atribute Navigation -->
             <div class="attr-nav">
-                <ul>
-                </ul>
+
             </div>
                 <!-- End Atribute Navigation -->
             </div>
